@@ -5,6 +5,7 @@ import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const BASE_URL = import.meta.env.BASE_URL;
 
   const projects = [
     {
@@ -21,7 +22,7 @@ const Projects = () => {
         "Scikit-learn",
       ],
       icon: "🧠",
-      image: "/projects/brain-tumor.png",
+      image: `${BASE_URL}projects/brain-tumor.png`,
       featured: true,
 
       githubPath:
@@ -86,7 +87,7 @@ const Projects = () => {
         "OR-Tools",
       ],
       icon: "📊",
-      image: "/projects/dagangan.png",
+      image: `${BASE_URL}projects/dagangan.png`,
       featured: false,
 
       githubPath:
@@ -152,7 +153,7 @@ const Projects = () => {
         "GLightbox",
       ],
       icon: "🌱",
-      image: "/projects/eco-samarinda.png",
+      image: `${BASE_URL}projects/eco-samarinda.png`,
       featured: false,
 
       githubPath:
@@ -213,7 +214,7 @@ const Projects = () => {
         "MySQL",
       ],
       icon: "🌐",
-      image: "/projects/siparung.png",
+      image: `${BASE_URL}projects/siparung.png`,
       featured: false,
 
       githubPath:
@@ -272,7 +273,7 @@ const Projects = () => {
         "JSON",
       ],
       icon: "🏝️",
-      image: "/projects/visit-lamaru.png",
+      image: `${BASE_URL}projects/visit-lamaru.png`,
       featured: false,
 
       githubPath:

@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
+  const BASE_URL = import.meta.env.BASE_URL;
   return (
     <section
       id="home"
@@ -56,14 +57,14 @@ const Hero = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 mt-8">
 
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-gray-950 font-medium hover:bg-gray-200 transition"
-              >
-                <Download size={18} />
-                Download CV
-              </a>
+            <a
+              href={`${BASE_URL}resume.pdf`}
+              download
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-gray-950 font-medium hover:bg-gray-200 transition"
+            >
+              <Download size={18} />
+              Download CV
+            </a>
 
               <a
                 href="https://github.com/myusrilap"
@@ -102,11 +103,11 @@ const Hero = () => {
 
               {/* Image */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-white/10 bg-gray-900">
-                <img
-                  src="/foto.jpeg"
-                  alt="Muhammad Yusril"
-                  className="w-full h-full object-cover"
-                />
+              <img
+                src={`${BASE_URL}foto.jpeg`}
+                alt="Muhammad Yusril"
+                className="w-full h-full object-cover"
+              />
               </div>
 
             </div>

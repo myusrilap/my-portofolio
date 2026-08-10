@@ -8,46 +8,47 @@ import {
 
 const Certifications = () => {
   const [current, setCurrent] = useState(0);
+  const BASE_URL = import.meta.env.BASE_URL;
 
   const certifications = [
     {
       title: "Data Analytic for Business",
       issuer: "Bitlabs Academy",
       date: "31 December 2024",
-      image: "/certifications/bitlabs-data-analytic.jpg",
+      image: `${BASE_URL}certifications/bitlabs-data-analytic.jpg`,
       description:
         "Certificate of Completion for successfully completing MSIB Kampus Merdeka Batch 7 – Data Analytic for Business at Bitlabs Academy.",
       details:
         "Intensive learning program focused on building work readiness in data technology. Final score: 85.31.",
     },
-
+  
     {
       title: "Database Programming with SQL",
       issuer: "Oracle Academy",
       date: "5 December 2023",
-      image: "/certifications/oracle-sql.jpg",
+      image: `${BASE_URL}certifications/oracle-sql.jpg`,
       description:
         "Award of Final Exam Completion for satisfactory completion of the Database Programming with SQL course final exam.",
       details:
         "Oracle Academy course focused on database programming and SQL.",
     },
-
+  
     {
       title: "Database Design",
       issuer: "Oracle Academy",
       date: "24 November 2023",
-      image: "/certifications/oracle-database-design.jpg",
+      image: `${BASE_URL}certifications/oracle-database-design.jpg`,
       description:
         "Award of Final Exam Completion for satisfactory completion of the Database Design course final exam.",
       details:
         "Oracle Academy course focused on database design concepts and relational database structure.",
     },
-
+  
     {
       title: "MUEPT",
       issuer: "Balai Bahasa Universitas Mulawarman",
       date: "11 June 2026",
-      image: "/certifications/muept.jpg",
+      image: `${BASE_URL}certifications/muept.jpg`,
       description:
         "English proficiency test result issued by UPT. Balai Bahasa Universitas Mulawarman.",
       details:
