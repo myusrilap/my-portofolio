@@ -201,127 +201,127 @@ const Projects = () => {
       },
     },
 
-    {
-      title: "Website SIPARUNG",
-      category: "Web Development",
-      description:
-        "Website project for SIPARUNG, developed as a web-based application with supporting frontend and backend components.",
-      technologies: [
-        "PHP",
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "MySQL",
-      ],
-      icon: "🌐",
-      image: `${BASE_URL}projects/siparung.png`,
-      featured: false,
-
-      githubPath:
-        "myusrilap/Website-SIPARUNG",
-
-      details: {
-        overview:
-          "Website SIPARUNG is a web development project that includes website pages, data handling, and supporting application components.",
-
-        problem:
-          "The project focuses on developing a functional web application rather than only presenting static information.",
-
-        process: [
-          "Design and structure website pages.",
-          "Implement frontend interface components.",
-          "Develop PHP-based application functionality.",
-          "Connect application components with database functionality.",
-          "Organize supporting assets and application files.",
+      {
+        title: "Website SIPARUNG",
+        category: "Web Development",
+        description:
+          "A room reservation website developed for the internal needs of BKPSDM Samarinda, allowing employees to view and request room reservations through a web-based interface.",
+        technologies: [
+          "PHP",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "MySQL",
         ],
-
-        results: [
-          {
-            label: "Project Type",
-            value: "Web Development",
-          },
-          {
-            label: "Backend",
-            value: "PHP",
-          },
-          {
-            label: "Database",
-            value: "MySQL",
-          },
-          {
-            label: "Output",
-            value: "Functional Web Application",
-          },
-        ],
-
-        findings: [
-          "The project demonstrates practical experience in developing a web application with database connectivity.",
-          "The project provides experience across frontend and backend web development.",
-        ],
+        icon: "🌐",
+        image: `${BASE_URL}projects/siparung.png`,
+        featured: false,
+      
+        githubPath:
+          "myusrilap/Website-SIPARUNG",
+      
+        details: {
+          overview:
+            "SIPARUNG is a web-based room reservation system developed to support the internal operational needs of BKPSDM Samarinda. The system is intended to make the process of borrowing and reserving rooms for employees more organized and accessible.",
+      
+          problem:
+            "The project addresses the need for a more structured way for employees to request and manage room reservations, reducing reliance on manual coordination for internal room usage.",
+      
+          process: [
+            "Analyze the interface and user flow requirements for the room reservation process.",
+            "Design and develop the frontend interface of the SIPARUNG website.",
+            "Implement website pages and interactive interface components.",
+            "Improve the layout and usability to make the reservation process easier to understand.",
+            "Integrate the frontend with the existing application components.",
+          ],
+      
+          results: [
+            {
+              label: "Project Type",
+              value: "Internal Web Application",
+            },
+            {
+              label: "Organization",
+              value: "BKPSDM Samarinda",
+            },
+            {
+              label: "Main Contribution",
+              value: "Frontend Development",
+            },
+            {
+              label: "Purpose",
+              value: "Internal Room Reservation",
+            },
+          ],
+      
+          findings: [
+            "The project provided practical experience in developing a web interface for an internal organizational system.",
+            "The main contribution focused on frontend development, including interface implementation, layout, and usability.",
+            "The project strengthened practical experience in developing web applications within a professional organizational environment.",
+          ],
+        },
       },
-    },
 
-    {
-      title: "Visit Lamaru",
-      category: "Web Development / KKN",
-      description:
-        "Website project for Kelurahan Lamaru designed to present local information, events, facilities, gallery content, and community-related information.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "JSON",
-      ],
-      icon: "🏝️",
-      image: `${BASE_URL}projects/visit-lamaru.png`,
-      featured: false,
-
-      githubPath:
-        "myusrilap/visit-lamaru-fe",
-
-      details: {
-        overview:
-          "Visit Lamaru is a frontend website project developed to present information about Kelurahan Lamaru in a structured and accessible web interface.",
-
-        problem:
-          "The project aims to organize local information into a website that can make information about events, facilities, galleries, and other local content easier to access.",
-
-        process: [
-          "Design the website information structure.",
-          "Develop the main landing page.",
-          "Implement event information.",
-          "Implement facilities information.",
-          "Develop gallery content.",
-          "Implement additional informational pages.",
-          "Use structured data to support website content.",
+      {
+        title: "Visit Lamaru",
+        category: "Web Development / KKN",
+        description:
+          "A functional web application developed during KKN to present information about Kelurahan Lamaru, with the main contribution focused on frontend development and user interface implementation.",
+        technologies: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "JSON",
         ],
-
-        results: [
-          {
-            label: "Project Type",
-            value: "Frontend Web Development",
-          },
-          {
-            label: "Main Focus",
-            value: "Kelurahan Lamaru Information",
-          },
-          {
-            label: "Content",
-            value: "Events, Facilities, Gallery, Information",
-          },
-          {
-            label: "Project Context",
-            value: "KKN",
-          },
-        ],
-
-        findings: [
-          "The project demonstrates practical frontend development for a real local-information use case.",
-          "Structured content makes local information easier to present through a web interface.",
-        ],
+        icon: "🏝️",
+        image: `${BASE_URL}projects/visit-lamaru.png`,
+        featured: false,
+      
+        githubPath:
+          "myusrilap/visit-lamaru-fe",
+      
+        details: {
+          overview:
+            "Visit Lamaru is a functional web application developed as part of a KKN project to provide accessible information about Kelurahan Lamaru. The website presents local information through an organized and user-friendly interface.",
+      
+          problem:
+            "The project aimed to provide a centralized web platform for presenting information about Kelurahan Lamaru, including local events, facilities, gallery content, and other community-related information.",
+      
+          process: [
+            "Analyze the information and content that needed to be presented on the website.",
+            "Design the website structure and user interface.",
+            "Develop the frontend pages and interface components.",
+            "Implement event, facilities, gallery, and informational sections.",
+            "Use structured JSON data to support dynamic website content.",
+            "Refine the interface layout and user experience across the website.",
+          ],
+      
+          results: [
+            {
+              label: "Project Type",
+              value: "Functional Web Application",
+            },
+            {
+              label: "Main Contribution",
+              value: "Frontend Development",
+            },
+            {
+              label: "Project Context",
+              value: "KKN",
+            },
+            {
+              label: "Purpose",
+              value: "Kelurahan Lamaru Information",
+            },
+          ],
+      
+          findings: [
+            "The project demonstrates practical frontend development for a real community information use case.",
+            "The website provides a structured interface for presenting local information, events, facilities, and gallery content.",
+            "The project strengthened practical experience in translating information requirements into a functional and user-friendly web interface.",
+          ],
+        },
       },
-    },
-
     {
       title: "Customer Segmentation",
       category: "Data Analytics",

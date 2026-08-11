@@ -53,10 +53,9 @@ const About = () => {
           className="mt-8 max-w-3xl"
         >
           <p className="text-gray-400 text-lg leading-relaxed">
-            I am an Information Systems student with an interest in
-            Data Analytics, Machine Learning, and Web Development.
-            I enjoy exploring data, building analytical solutions,
-            and developing applications that solve practical problems.
+          I’m an Information Systems fresh graduate focused on Data, Machine Learning, and Web Development. 
+          I enjoy transforming data into insights, building intelligent solutions
+          and creating web applications that solve real-world problems.
           </p>
 
           <p className="mt-5 text-gray-400 text-lg leading-relaxed">
