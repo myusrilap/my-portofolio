@@ -49,9 +49,9 @@ const Hero = () => {
             </div>
 
             <p className="mt-6 max-w-xl text-gray-400 leading-relaxed">
-              Information Systems student interested in data analytics,
-              machine learning, and web development. I enjoy transforming
-              data into insights and building practical digital solutions.
+            Fresh graduate in Information Systems with interests in data analytics,
+            machine learning, and web development. I enjoy transforming data into
+            insights and building practical digital solutions.
             </p>
 
             {/* Buttons */}
