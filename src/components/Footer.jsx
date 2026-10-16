@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
 
             <p className="mt-1 text-xs text-gray-600">
-              Built with React & Tailwind CSS.
+              Dibuat menggunakan React dan Tailwind CSS.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
             <a
               href="#home"
-              aria-label="Back to top"
+              aria-label="Kembali ke atas"
               className="w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 text-gray-400 hover:text-white hover:bg-white/5 transition"
             >
               <ArrowUp size={17} />
