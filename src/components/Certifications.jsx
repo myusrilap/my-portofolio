@@ -84,7 +84,7 @@ const Certifications = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-blue-400 font-medium mb-3">
-            Certifications
+            Sertifikasi
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
