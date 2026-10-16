@@ -89,9 +89,9 @@ const ProjectModal = ({ project, onClose }) => {
 
                 {/* Links */}
                 <div className="flex flex-wrap gap-3 mt-7">
-                  {project.github && (
+                  {(project.github || project.githubPath) && (
                     <a
-                      href={project.github}
+                      href={project.github || `https://github.com/${project.githubPath}`}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm hover:bg-white/10 transition"

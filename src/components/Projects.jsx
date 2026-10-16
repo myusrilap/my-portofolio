@@ -36,10 +36,10 @@ const Projects = () => {
           "The research evaluates whether isolating the tumor region from MRI images can improve classification performance across Glioma, Meningioma, Pituitary, and No Tumor classes.",
 
         process: [
-          "Image preprocessing using resizing, CLAHE, normalization, and augmentation.",
-          "Stratified dataset splitting for model development and evaluation.",
+          "Preprocessed MRI images with resizing to 224×224, CLAHE enhancement, normalization, and training augmentation.",
+          "Used a stratified 70/15/15 split of 7,200 classification images across four balanced classes, with 1,080 test images.",
           "Development of a baseline VGG16 classification model.",
-          "Development of a VGG16-based U-Net segmentation model for ROI extraction.",
+          "Trained VGG16-encoder U-Net on a separate segmentation dataset; the segmentation model reached IoU 0.8224.",
           "Classification using MRI images with and without ROI segmentation.",
           "Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.",
         ],
@@ -47,11 +47,11 @@ const Projects = () => {
         results: [
           {
             label: "Baseline",
-            value: "VGG16 without ROI segmentation",
+            value: "98% test accuracy (without ROI)",
           },
           {
             label: "Experimental Model",
-            value: "U-Net ROI + VGG16",
+            value: "87% test accuracy (with ROI)",
           },
           {
             label: "Classification Classes",
@@ -60,14 +60,14 @@ const Projects = () => {
           {
             label: "Main Finding",
             value:
-              "Baseline VGG16 achieved better classification performance",
+              "11-percentage-point higher test accuracy without ROI",
           },
         ],
 
         findings: [
           "VGG16 without ROI segmentation achieved better classification performance than the segmentation-based pipeline.",
-          "ROI segmentation did not consistently improve classification performance.",
-          "Performance decreases were particularly observed in Glioma and No Tumor.",
+          "Adding U-Net ROI masking reduced test accuracy from 98% to 87%; segmentation did not benefit this classification setup.",
+          "A likely explanation is that hard ROI masking removes contextual MRI information; the different segmentation and classification datasets may also contribute.",
         ],
       },
     },
@@ -76,7 +76,7 @@ const Projects = () => {
       title: "Business Data Analytics — Dagangan",
       category: "Data Analytics / Academic Team Project",
       description:
-        "Business analytics project analyzing customer behavior, sales representative visits, route efficiency, and transaction-related business questions.",
+        "Analyzed customer transactions and sales visits, built RFM customer segments, and simulated more efficient representative routes using Google OR-Tools.",
       technologies: [
         "Python",
         "Pandas",
@@ -102,7 +102,7 @@ const Projects = () => {
 
         process: [
           "Clean and prepare business datasets.",
-          "Perform customer segmentation using K-Means clustering.",
+          "Segment customers into four groups using RFM features and K-Means clustering.",
           "Analyze sales representative visit patterns.",
           "Identify customer visit priorities and visit frequency.",
           "Analyze historical visit days and hours.",
@@ -122,7 +122,7 @@ const Projects = () => {
           },
           {
             label: "Route Optimization",
-            value: "TSP + Guided Local Search",
+            value: "Up to 25% route-distance reduction (simulation)",
           },
           {
             label: "Visualization",
@@ -133,8 +133,8 @@ const Projects = () => {
         findings: [
           "Customer segmentation was used to prioritize sales visits.",
           "Historical visit patterns can support sales scheduling decisions.",
-          "Route optimization produced more efficient routes based on the project's distance comparison.",
-          "The project was completed as an academic team project.",
+          "Google OR-Tools TSP route simulations reduced travel distance by up to 25% against the project comparison routes; not a measured field deployment.",
+          "This was a Bitlabs Academy team case study; results represent analytical recommendations and modeled efficiency, not deployed company-wide outcomes.",
         ],
       },
     },
@@ -167,7 +167,7 @@ const Projects = () => {
         findings: [
           "The high-stress group recorded a 5.92 average sleep-quality score, compared with 8.97 in the low-stress group.",
           "Sleep duration was positively associated with sleep quality (Spearman +0.887).",
-          "The analysis describes associations in the sample rather than cause-and-effect relationships."
+          "Among 374 observations, sleep duration and quality were strongly associated (Spearman +0.887); these observational findings do not establish causality."
         ]
       }
     },
@@ -196,9 +196,9 @@ const Projects = () => {
           { label: "Promotion Rate", value: "20.38% female vs 20.99% male" }
         ],
         findings: [
-          "The overall leadership-training participation gap of 1.96 percentage points was larger than the 0.61-point promotion-rate gap.",
+          "Women had a 28.44% leadership-training participation rate versus 30.40% for men, a descriptive gap of 1.96 percentage points; promotion differed by 0.61 points.",
           "Differences varied across departments and job levels rather than following a uniform pattern.",
-          "Aggregate promotion and training differences were not statistically significant at the 5% level. Findings relate to fictional case-study data, not an audit of real employers."
+          "Overall gender gaps in promotion (chi-square p≈0.631) and training (p≈0.144) were not significant at α=0.05. This is a fictional case study, not an audit of real employers."
         ]
       }
     },
@@ -259,8 +259,8 @@ const Projects = () => {
         ],
 
         findings: [
-          "The project demonstrates frontend development and website structure implementation.",
-          "The website combines informational content with prototype interactive features.",
+          "Implemented a multi-page responsive informational prototype with navigation, news, galleries, environmental resources, and UI interactions.",
+          "Complaint and registration interfaces are prototypes; this project is not an official public service.",
         ],
       },
     },
@@ -319,9 +319,9 @@ const Projects = () => {
           ],
       
           findings: [
-            "The project provided practical experience in developing a web interface for an internal organizational system.",
-            "The main contribution focused on frontend development, including interface implementation, layout, and usability.",
-            "The project strengthened practical experience in developing web applications within a professional organizational environment.",
+            "Delivered frontend interface components for an internal room-booking workflow, including dashboard and booking-related views.",
+            "My contribution was frontend UI implementation with Bootstrap/AdminLTE; backend and the broader booking system were collaborative team work.",
+            "This work was completed during an internship at BKPSDM Samarinda; no measured adoption or booking-time reduction is claimed.",
           ],
         },
       },
@@ -380,9 +380,9 @@ const Projects = () => {
           ],
       
           findings: [
-            "The project demonstrates practical frontend development for a real community information use case.",
-            "The website provides a structured interface for presenting local information, events, facilities, and gallery content.",
-            "The project strengthened practical experience in translating information requirements into a functional and user-friendly web interface.",
+            "Implemented frontend pages for a KKN tourism-information site covering attractions, facilities, events, and gallery content.",
+            "The site provides a navigable, responsive information interface; the work was developed collaboratively with the KKN team.",
+            "My contribution focused on frontend development; no traffic or tourism-growth impact has been independently established.",
           ],
         },
       },
@@ -390,7 +390,7 @@ const Projects = () => {
       title: "Customer Segmentation",
       category: "Data Analytics",
       description:
-        "Customer segmentation project focused on preparing customer data and grouping customers into meaningful segments using clustering analysis.",
+        "Applied K-Means clustering to group customers by similar characteristics, with preprocessing, cluster exploration, and visual interpretation.",
       technologies: [
         "Python",
         "Pandas",
@@ -407,7 +407,7 @@ const Projects = () => {
 
       details: {
         overview:
-          "A data analysis project focused on customer segmentation using clustering techniques to identify groups of customers with similar characteristics.",
+          "A clustering project applying K-Means and exploratory analysis to identify four distinct groups of customers with similar attributes.",
 
         problem:
           "Customer data can contain different behavioral patterns. Segmentation can help organize customers into groups that are easier to analyze and interpret.",
@@ -417,7 +417,7 @@ const Projects = () => {
           "Clean and prepare the dataset.",
           "Perform exploratory analysis.",
           "Prepare relevant features for segmentation.",
-          "Apply clustering analysis.",
+          "Apply K-Means clustering and interpret the characteristics of four resulting groups.",
           "Analyze and interpret the resulting customer groups.",
           "Prepare visual outputs to communicate the segmentation results.",
         ],
@@ -429,7 +429,7 @@ const Projects = () => {
           },
           {
             label: "Main Method",
-            value: "Clustering",
+            value: "K-Means (4 clusters)",
           },
           {
             label: "Main Tool",
@@ -437,13 +437,13 @@ const Projects = () => {
           },
           {
             label: "Output",
-            value: "Customer Segments",
+            value: "Four customer groups",
           },
         ],
 
         findings: [
-          "Clustering can be used to identify groups of customers with similar characteristics.",
-          "Customer segments provide a structured way to interpret customer data.",
+          "K-Means grouped customers into four clusters for comparing their characteristics and supporting more targeted analysis.",
+          "The repository does not yet present validated business outcomes or a quantified improvement from applying these segments.",
         ],
       },
     },
