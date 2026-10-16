@@ -216,14 +216,14 @@ const ProjectModal = ({ project, onClose }) => {
               {/* Footer */}
               <div className="px-7 py-6 sm:px-10 border-t border-white/10 flex justify-between items-center">
                 <p className="text-sm text-gray-500">
-                  Project Details
+                  Detail Proyek
                 </p>
 
                 <button
                   onClick={onClose}
                   className="text-sm text-gray-400 hover:text-white transition"
                 >
-                  Close
+                  Tutup
                 </button>
               </div>
             </motion.div>
