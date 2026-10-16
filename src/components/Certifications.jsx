@@ -14,23 +14,23 @@ const Certifications = () => {
     {
       title: "Data Analytic for Business",
       issuer: "Bitlabs Academy",
-      date: "31 December 2024",
+      date: "31 Desember 2024",
       image: `${BASE_URL}certifications/bitlabs-data-analytic.jpg`,
       description:
-        "Certificate of Completion for successfully completing MSIB Kampus Merdeka Batch 7 – Data Analytic for Business at Bitlabs Academy.",
+        "Sertifikat penyelesaian program MSIB Kampus Merdeka Batch 7 bidang Data Analytic for Business di Bitlabs Academy.",
       details:
-        "Intensive learning program focused on building work readiness in data technology. Final score: 85.31.",
+        "Program pembelajaran intensif analisis data untuk kebutuhan bisnis. Nilai akhir: 85,31.",
     },
   
     {
       title: "Database Programming with SQL",
       issuer: "Oracle Academy",
-      date: "5 December 2023",
+      date: "5 Desember 2023",
       image: `${BASE_URL}certifications/oracle-sql.jpg`,
       description:
-        "Award of Final Exam Completion for satisfactory completion of the Database Programming with SQL course final exam.",
+        "Sertifikat kelulusan ujian akhir mata kuliah Database Programming with SQL.",
       details:
-        "Oracle Academy course focused on database programming and SQL.",
+        "Pelatihan Oracle Academy yang berfokus pada pemrograman basis data dan SQL.",
     },
   
     {
@@ -39,20 +39,20 @@ const Certifications = () => {
       date: "24 November 2023",
       image: `${BASE_URL}certifications/oracle-database-design.jpg`,
       description:
-        "Award of Final Exam Completion for satisfactory completion of the Database Design course final exam.",
+        "Sertifikat kelulusan ujian akhir mata kuliah Database Design.",
       details:
-        "Oracle Academy course focused on database design concepts and relational database structure.",
+        "Pelatihan perancangan basis data dan struktur basis data relasional.",
     },
   
     {
       title: "MUEPT",
       issuer: "Balai Bahasa Universitas Mulawarman",
-      date: "11 June 2026",
+      date: "11 Juni 2026",
       image: `${BASE_URL}certifications/muept.jpg`,
       description:
-        "English proficiency test result issued by UPT. Balai Bahasa Universitas Mulawarman.",
+        "Hasil tes kemampuan bahasa Inggris yang diterbitkan oleh UPT Balai Bahasa Universitas Mulawarman.",
       details:
-        "Listening: 60 • Structure & Written Expression: 64 • Reading: 59 • Total Score: 610.",
+        "Listening: 60 • Structure & Written Expression: 64 • Reading: 59 • Skor total: 610.",
       credential:
         "http://bahasa.unmul.ac.id/f_home/cetakcertificatefront/2606110139",
     },
@@ -88,13 +88,13 @@ const Certifications = () => {
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-            Certifications &
-            <span className="text-blue-400"> Training.</span>
+            Sertifikasi &
+            <span className="text-blue-400"> Pelatihan.</span>
           </h2>
 
           <p className="mt-5 text-gray-400 max-w-2xl text-lg leading-relaxed">
-            A selection of certifications, courses, and academic
-            credentials that support my technical and professional skills.
+            Kumpulan sertifikasi, pelatihan, dan pencapaian akademik yang mendukung
+            kemampuan teknis dan profesional saya.
           </p>
         </motion.div>
 
@@ -184,7 +184,7 @@ const Certifications = () => {
                 {/* Details */}
                 <div className="mt-6 p-4 rounded-xl bg-white/[0.03] border border-white/10">
                   <p className="text-xs uppercase tracking-wider text-gray-500">
-                    Details
+                    Rincian
                   </p>
 
                   <p className="mt-2 text-sm text-gray-300 leading-relaxed">
@@ -200,7 +200,7 @@ const Certifications = () => {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 mt-6 px-4 py-2.5 rounded-xl bg-white text-gray-950 text-sm font-medium hover:bg-gray-200 transition"
                   >
-                    Verify Credential
+                    Verifikasi Sertifikat
                     <ExternalLink size={16} />
                   </a>
                 )}
@@ -216,7 +216,7 @@ const Certifications = () => {
             {/* Previous */}
             <button
               onClick={previousSlide}
-              aria-label="Previous certification"
+              aria-label="Sertifikat sebelumnya"
               className="w-11 h-11 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               <ChevronLeft size={20} />
@@ -228,7 +228,7 @@ const Certifications = () => {
                 <button
                   key={item.title}
                   onClick={() => setCurrent(index)}
-                  aria-label={`View ${item.title}`}
+                  aria-label={`Lihat ${item.title}`}
                   className={`h-2 rounded-full transition-all ${
                     current === index
                       ? "w-7 bg-blue-400"
@@ -241,7 +241,7 @@ const Certifications = () => {
             {/* Next */}
             <button
               onClick={nextSlide}
-              aria-label="Next certification"
+              aria-label="Sertifikat berikutnya"
               className="w-11 h-11 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               <ChevronRight size={20} />
