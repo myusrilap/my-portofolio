@@ -4,91 +4,91 @@ const Experience = () => {
   const experiences = [
     {
       company: "Universitas Mulawarman",
-      role: "Head of Laboratory Assistant",
-      type: "Part-time",
-      period: "Aug 2024 — Jun 2025",
-      location: "Samarinda, East Kalimantan",
+      role: "Koordinator Utama Asisten Laboratorium",
+      type: "Paruh waktu",
+      period: "Agu 2024 — Jun 2025",
+      location: "Samarinda, Kalimantan Timur",
       description:
-        "Led and coordinated the Information Systems laboratory assistant team to support the delivery of practical courses and maintain efficient laboratory operations.",
+        "Memimpin dan mengoordinasikan tim asisten laboratorium Sistem Informasi untuk menunjang praktikum dan operasional laboratorium.",
       highlights: [
-        "Managed assistant schedules and coordinated laboratory activities.",
-        "Facilitated communication between laboratory assistants and lecturers.",
-        "Mentored fellow laboratory assistants and helped resolve operational and technical issues.",
-        "Contributed to improving team coordination and laboratory workflows.",
+        "Menyusun jadwal asisten dan mengoordinasikan kegiatan laboratorium.",
+        "Menjadi penghubung antara asisten laboratorium dan dosen.",
+        "Mendampingi asisten serta membantu menyelesaikan kendala operasional dan teknis.",
+        "Meningkatkan koordinasi tim dan keteraturan alur kerja laboratorium.",
       ],
       skills: [
-        "Team Leadership",
-        "Problem Solving",
-        "Communication",
-        "Team Coordination",
+        "Kepemimpinan Tim",
+        "Pemecahan Masalah",
+        "Komunikasi",
+        "Koordinasi Tim",
       ],
     },
 
     {
       company: "Universitas Mulawarman",
-      role: "Laboratory Assistant",
-      type: "Contract",
-      period: "Aug 2023 — Jun 2025",
-      location: "On-site",
+      role: "Asisten Laboratorium",
+      type: "Kontrak",
+      period: "Agu 2023 — Jun 2025",
+      location: "Luring",
       description:
-        "Supported practical laboratory sessions across multiple Information Systems courses, providing students with hands-on technical guidance and troubleshooting.",
+        "Mendukung pelaksanaan praktikum Sistem Informasi, membimbing mahasiswa, dan membantu penanganan kendala teknis.",
       highlights: [
-        "Assisted practical courses including Basic Programming, Operating Systems, Computer Network Management Design, and Data Analytics & Visualization.",
-        "Guided students in Python programming, Linux and Windows administration, and computer networking.",
-        "Supported exploratory data analysis and data visualization using Tableau.",
-        "Prepared laboratory materials, evaluated assignments, and provided technical feedback.",
+        "Mendampingi praktikum Pemrograman Dasar, Sistem Operasi, Perancangan Manajemen Jaringan Komputer, serta Analisis dan Visualisasi Data.",
+        "Membimbing mahasiswa menggunakan Python, administrasi Linux/Windows, dan jaringan komputer.",
+        "Mendampingi analisis eksploratif dan visualisasi data menggunakan Tableau.",
+        "Menyiapkan bahan praktikum, mengevaluasi tugas, dan memberikan umpan balik teknis.",
       ],
       skills: [
         "Python",
         "Tableau",
-        "Data Analytics",
-        "Data Visualization",
-        "Computer Networking",
+        "Analisis Data",
+        "Visualisasi Data",
+        "Jaringan Komputer",
       ],
     },
 
     {
       company: "Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Kota Samarinda",
-      role: "Staff Intern",
-      type: "Apprenticeship",
+      role: "Staf Magang",
+      type: "Magang",
       period: "Feb 2025 — Apr 2025",
-      location: "Samarinda, East Kalimantan · On-site",
+      location: "Samarinda, Kalimantan Timur · Luring",
       description:
-        "Supported administrative and data-related activities while contributing to the development and improvement of SIPARUNG, a web-based room reservation system.",
+        "Mendukung pengelolaan data dan administrasi serta mengembangkan antarmuka frontend SIPARUNG, sistem peminjaman ruang berbasis web.",
       highlights: [
-        "Performed data entry and data management using Microsoft Excel.",
-        "Prepared and organized official documents for internal operations.",
-        "Assisted front-end development for the SIPARUNG web application.",
-        "Contributed to improving the user interface and overall usability.",
+        "Melakukan entri dan pengelolaan data menggunakan Microsoft Excel.",
+        "Menyiapkan dan mengarsipkan dokumen untuk kegiatan internal.",
+        "Mengimplementasikan seluruh bagian frontend aplikasi SIPARUNG.",
+        "Mengembangkan tampilan dan navigasi agar alur peminjaman lebih mudah digunakan.",
       ],
       skills: [
         "Microsoft Excel",
-        "Data Management",
-        "Web Development",
-        "Front-end Development",
+        "Pengelolaan Data",
+        "Pengembangan Web",
+        "Pengembangan Frontend",
       ],
     },
 
     {
       company: "Bitlabs Academy",
-      role: "Data Analytic for Business",
-      type: "Part-time · Independent Study",
-      period: "Sep 2024 — Dec 2024",
-      location: "Remote",
+      role: "Analisis Data for Business",
+      type: "Studi Independen",
+      period: "Sep 2024 — Des 2024",
+      location: "Daring",
       description:
-        "Completed an independent study program focused on Data Analytics for Business, combining technical data skills with business-oriented analytical problem solving.",
+        "Menyelesaikan program Studi Independen bidang analisis data untuk bisnis yang menggabungkan keterampilan teknis dan pemecahan masalah bisnis.",
       highlights: [
-        "Worked with Excel, Tableau, Python, and SQL for data analysis.",
-        "Analyzed datasets and created data visualizations.",
-        "Derived actionable insights from business data.",
-        "Developed project management skills for planning and executing analytics projects.",
+        "Menggunakan Excel, Tableau, Python, dan SQL dalam analisis data.",
+        "Menganalisis dataset dan membuat visualisasi data.",
+        "Menghasilkan insight dan rekomendasi berbasis data bisnis.",
+        "Menerapkan perencanaan kerja tim dan pengelolaan proyek analitik.",
       ],
       skills: [
         "Microsoft Excel",
         "SQL",
         "Python",
         "Tableau",
-        "Data Analysis",
+        "Analisis Data",
       ],
     },
   ];
@@ -105,17 +105,17 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-blue-400 font-medium mb-3">
-            Experience
+            Pengalaman
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-            Where I've
-            <span className="text-blue-400"> worked.</span>
+            Pengalaman
+            <span className="text-blue-400"> profesional.</span>
           </h2>
 
           <p className="mt-5 text-gray-400 max-w-2xl text-lg leading-relaxed">
-            Experience across laboratory operations, data analytics,
-            leadership, and web development.
+            Pengalaman dalam operasional laboratorium, analisis data,
+            kepemimpinan tim, serta pengembangan web.
           </p>
         </motion.div>
 

@@ -50,7 +50,7 @@ const ProjectModal = ({ project, onClose }) => {
               <button
                 onClick={onClose}
                 className="absolute top-5 right-5 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 border border-white/10 text-gray-300 hover:text-white hover:bg-white/10 transition"
-                aria-label="Close project"
+                aria-label="Tutup detail proyek"
               >
                 <X size={20} />
               </button>
@@ -75,6 +75,21 @@ const ProjectModal = ({ project, onClose }) => {
                   {project.description}
                 </p>
 
+                {project.contribution && (
+                  <div className="mt-6 rounded-xl border border-blue-500/20 bg-blue-500/[0.06] px-4 py-3">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-blue-400">Kontribusi Saya</p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-200">{project.contribution}</p>
+                  </div>
+                )}
+
+                {!project.image && (
+                  <div className="mt-6 min-h-40 rounded-2xl border border-dashed border-white/20 bg-white/[0.025] flex flex-col items-center justify-center p-6 text-center">
+                    <span className="text-3xl" aria-hidden="true">▧</span>
+                    <p className="mt-2 text-sm text-gray-300">Pratinjau visual proyek</p>
+                    <p className="mt-1 text-xs text-gray-500">Area untuk gambar hasil analisis atau tangkapan layar proyek</p>
+                  </div>
+                )}
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mt-6">
                   {project.technologies.map((technology) => (
@@ -97,7 +112,7 @@ const ProjectModal = ({ project, onClose }) => {
                       className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm hover:bg-white/10 transition"
                     >
                       <FaGithub size={17} />
-                      GitHub
+                      Lihat Kode & Dokumentasi
                     </a>
                   )}
 
@@ -119,23 +134,23 @@ const ProjectModal = ({ project, onClose }) => {
               <div className="p-7 sm:p-10">
                 <div className="space-y-12">
 
-                  {/* Overview */}
+                  {/* Gambaran proyek */}
                   {project.details?.overview && (
-                    <DetailSection title="Overview">
+                    <DetailSection title="Gambaran Proyek">
                       <p>{project.details.overview}</p>
                     </DetailSection>
                   )}
 
                   {/* Problem */}
                   {project.details?.problem && (
-                    <DetailSection title="Problem">
+                    <DetailSection title="Permasalahan">
                       <p>{project.details.problem}</p>
                     </DetailSection>
                   )}
 
                   {/* Process */}
                   {project.details?.process && (
-                    <DetailSection title="Process">
+                    <DetailSection title="Pendekatan & Implementasi">
                       <div className="space-y-3">
                         {project.details.process.map((item, index) => (
                           <div
@@ -157,7 +172,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                   {/* Results */}
                   {project.details?.results && (
-                    <DetailSection title="Results">
+                    <DetailSection title="Hasil Utama">
                       <div className="grid sm:grid-cols-2 gap-4">
                         {project.details.results.map((result, index) => (
                           <div
@@ -179,7 +194,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                   {/* Findings */}
                   {project.details?.findings && (
-                    <DetailSection title="Key Findings">
+                    <DetailSection title="Temuan & Insight">
                       <div className="space-y-3">
                         {project.details.findings.map((finding, index) => (
                           <div
@@ -201,14 +216,14 @@ const ProjectModal = ({ project, onClose }) => {
               {/* Footer */}
               <div className="px-7 py-6 sm:px-10 border-t border-white/10 flex justify-between items-center">
                 <p className="text-sm text-gray-500">
-                  Project Details
+                  Detail Proyek
                 </p>
 
                 <button
                   onClick={onClose}
                   className="text-sm text-gray-400 hover:text-white transition"
                 >
-                  Close
+                  Tutup
                 </button>
               </div>
             </motion.div>

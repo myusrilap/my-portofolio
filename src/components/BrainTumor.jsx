@@ -14,7 +14,7 @@ const BrainTumor = () => {
           className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition"
         >
           <ArrowLeft size={16} />
-          Back to Projects
+          Kembali ke Proyek
         </Link>
 
         {/* Header */}
@@ -28,19 +28,18 @@ const BrainTumor = () => {
             <BrainCircuit size={24} />
 
             <span className="text-sm font-medium uppercase tracking-wider">
-              Machine Learning / Research
+              Machine Learning / Penelitian
             </span>
           </div>
 
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Brain Tumor
-            <span className="text-blue-400"> Classification</span>
+            Klasifikasi Tumor Otak
+            <span className="text-blue-400"> dengan MRI</span>
           </h1>
 
           <p className="mt-6 text-xl text-gray-400 max-w-3xl leading-relaxed">
-            Comparative analysis of brain tumor classification using
-            VGG16 with and without U-Net-based ROI segmentation on
-            MRI images.
+            Perbandingan klasifikasi tumor otak dari citra MRI menggunakan VGG16
+            dengan dan tanpa segmentasi ROI berbasis U-Net.
           </p>
 
           {/* Technologies */}
@@ -65,55 +64,43 @@ const BrainTumor = () => {
           {/* GitHub */}
           <div className="mt-8">
             <a
-              href="https://github.com/myusrilap"
+              href="https://github.com/myusrilap/Brain-Tumor-Classification-using-VGG16-with-and-without-U-Net-ROI-Segmentation"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-gray-950 font-medium hover:bg-gray-200 transition"
             >
               <FaGithub size={18} />
-              View GitHub
+              Lihat GitHub
             </a>
           </div>
         </motion.div>
 
         {/* Overview */}
-        <ProjectSection title="Overview">
+        <ProjectSection title="Gambaran Proyek">
           <p>
-            This project investigates brain tumor classification from
-            MRI images using a pretrained VGG16 convolutional neural
-            network. The study compares a baseline classification
-            approach with an approach that applies U-Net-based ROI
-            segmentation before classification.
+            Penelitian ini mengevaluasi klasifikasi tumor otak dari citra MRI menggunakan VGG16 pralatih. Dua pendekatan dibandingkan: klasifikasi langsung dan klasifikasi setelah segmentasi ROI menggunakan U-Net.
           </p>
 
           <p className="mt-4">
-            The objective is to evaluate whether isolating the tumor
-            region before classification improves classification
-            performance.
+            Tujuannya adalah menguji apakah pemisahan area tumor sebelum klasifikasi meningkatkan akurasi model.
           </p>
         </ProjectSection>
 
         {/* Problem */}
-        <ProjectSection title="Problem">
+        <ProjectSection title="Permasalahan">
           <p>
-            Brain MRI images contain information that can be used to
-            classify different tumor categories. However, surrounding
-            image regions may also contain visual information that
-            influences the classification model.
+            Citra MRI mengandung informasi untuk membedakan kategori tumor. Area sekitar tumor juga dapat menyediakan konteks yang memengaruhi prediksi model.
           </p>
 
           <p className="mt-4">
-            This project therefore compares classification using the
-            original MRI images against classification using images
-            processed through ROI segmentation.
+            Karena itu, penelitian membandingkan hasil klasifikasi menggunakan citra asli dan citra hasil segmentasi ROI.
           </p>
         </ProjectSection>
 
         {/* Dataset */}
         <ProjectSection title="Dataset">
           <p>
-            The classification experiment uses a brain tumor MRI
-            dataset containing four classes:
+            Eksperimen klasifikasi menggunakan dataset MRI dengan empat kelas:
           </p>
 
           <ul className="mt-5 space-y-2 text-gray-400">
@@ -124,26 +111,25 @@ const BrainTumor = () => {
           </ul>
 
           <p className="mt-5">
-            The segmentation stage uses a separate MRI segmentation
-            dataset to obtain tumor ROI masks.
+            Tahap segmentasi menggunakan dataset MRI terpisah untuk menghasilkan mask ROI tumor.
           </p>
         </ProjectSection>
 
         {/* Methodology */}
-        <ProjectSection title="Methodology">
+        <ProjectSection title="Metodologi">
 
           <h3 className="text-xl font-semibold text-white">
-            Preprocessing
+            Prapemrosesan
           </h3>
 
           <div className="mt-5 grid sm:grid-cols-2 gap-3">
             {[
               "Resize",
               "CLAHE",
-              "Normalization",
-              "Data Augmentation",
-              "Stratified Split",
-              "ROI Segmentation",
+              "Normalisasi",
+              "Augmentasi Data",
+              "Pembagian Data Stratified",
+              "Segmentasi ROI",
             ].map((step, index) => (
               <div
                 key={step}
@@ -161,34 +147,31 @@ const BrainTumor = () => {
           </div>
 
           <h3 className="mt-10 text-xl font-semibold text-white">
-            Classification Model
+            Model Klasifikasi
           </h3>
 
           <p className="mt-4">
-            The classification model uses VGG16 pretrained on
-            ImageNet, followed by custom fully connected layers for
-            four-class classification.
+            Model klasifikasi menggunakan VGG16 pralatih ImageNet, kemudian lapisan fully connected untuk empat kelas.
           </p>
 
           <h3 className="mt-10 text-xl font-semibold text-white">
-            Segmentation Model
+            Model Segmentasi
           </h3>
 
           <p className="mt-4">
-            U-Net with a VGG16 encoder is used to generate tumor ROI
-            segmentation masks before classification.
+            U-Net dengan encoder VGG16 menghasilkan mask ROI tumor sebelum klasifikasi.
           </p>
 
         </ProjectSection>
 
         {/* Comparison */}
-        <ProjectSection title="Experimental Comparison">
+        <ProjectSection title="Perbandingan Eksperimen">
 
           <div className="grid md:grid-cols-2 gap-5">
 
             <div className="p-6 rounded-2xl border border-blue-500/20 bg-blue-500/[0.04]">
               <p className="text-blue-400 text-sm font-medium">
-                BASELINE
+                MODEL DASAR
               </p>
 
               <h3 className="mt-2 text-xl font-semibold text-white">
@@ -196,14 +179,13 @@ const BrainTumor = () => {
               </h3>
 
               <p className="mt-3 text-gray-400">
-                Classification is performed directly on the
-                preprocessed MRI images without ROI segmentation.
+                Klasifikasi dilakukan langsung pada citra MRI hasil prapemrosesan tanpa segmentasi ROI.
               </p>
             </div>
 
             <div className="p-6 rounded-2xl border border-white/10 bg-white/[0.03]">
               <p className="text-blue-400 text-sm font-medium">
-                EXPERIMENT
+                EKSPERIMEN
               </p>
 
               <h3 className="mt-2 text-xl font-semibold text-white">
@@ -211,8 +193,7 @@ const BrainTumor = () => {
               </h3>
 
               <p className="mt-3 text-gray-400">
-                U-Net is used to isolate the tumor ROI before the
-                resulting images are classified using VGG16.
+                U-Net digunakan untuk memisahkan ROI tumor sebelum citra diklasifikasikan menggunakan VGG16.
               </p>
             </div>
 
@@ -221,14 +202,14 @@ const BrainTumor = () => {
         </ProjectSection>
 
         {/* Results */}
-        <ProjectSection title="Results">
+        <ProjectSection title="Hasil">
 
           <div className="overflow-x-auto rounded-2xl border border-white/10">
             <table className="w-full text-sm">
               <thead className="bg-white/5">
                 <tr>
                   <th className="text-left p-4 text-gray-300">
-                    Class
+                    Kelas
                   </th>
 
                   <th className="text-center p-4 text-gray-300">
@@ -274,25 +255,20 @@ const BrainTumor = () => {
         </ProjectSection>
 
         {/* Key Findings */}
-        <ProjectSection title="Key Findings">
+        <ProjectSection title="Temuan Utama">
 
           <div className="space-y-4">
 
             <Finding>
-              The baseline VGG16 approach achieved stronger
-              classification performance than the ROI-based approach
-              across the evaluated classes.
+              VGG16 tanpa ROI menghasilkan performa klasifikasi lebih tinggi pada keempat kelas pengujian.
             </Finding>
 
             <Finding>
-              ROI segmentation did not consistently improve
-              classification performance.
+              Segmentasi ROI tidak meningkatkan performa pada eksperimen ini.
             </Finding>
 
             <Finding>
-              Differences in MRI image characteristics and the
-              suitability of images for segmentation can affect the
-              effectiveness of the ROI-based approach.
+              Perbedaan karakteristik citra MRI dan kecocokannya untuk segmentasi diduga memengaruhi performa pendekatan ROI.
             </Finding>
 
           </div>
@@ -302,13 +278,13 @@ const BrainTumor = () => {
         {/* GitHub */}
         <div className="mt-16 pt-8 border-t border-white/10">
           <a
-            href="https://github.com/myusrilap"
+            href="https://github.com/myusrilap/Brain-Tumor-Classification-using-VGG16-with-and-without-U-Net-ROI-Segmentation"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition"
           >
             <FaGithub size={18} />
-            View source on GitHub
+            Lihat kode di GitHub
           </a>
         </div>
 

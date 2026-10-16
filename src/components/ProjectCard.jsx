@@ -23,11 +23,11 @@ const ProjectCard = ({ project, index = 0, onViewProject }) => {
           : "border-white/10 bg-white/[0.03]"
       } transition-colors duration-300`}
     >
-      {/* Featured */}
+      {/* Unggulan */}
       {project.featured && (
         <div className="absolute top-5 right-5 z-10">
           <span className="px-3 py-1 rounded-full text-xs font-medium text-blue-300 bg-blue-500/10 border border-blue-500/20">
-            Featured
+            Unggulan
           </span>
         </div>
       )}
@@ -48,7 +48,7 @@ const ProjectCard = ({ project, index = 0, onViewProject }) => {
               </div>
 
               <p className="text-sm text-gray-500">
-                Project Preview
+                Pratinjau Proyek
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ const ProjectCard = ({ project, index = 0, onViewProject }) => {
             onClick={() => onViewProject(project)}
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white text-gray-950 text-sm font-medium hover:bg-gray-200 transition"
           >
-            View Project
+            Lihat Detail
             <ArrowUpRight size={16} />
           </button>
 
@@ -114,7 +114,7 @@ const ProjectCard = ({ project, index = 0, onViewProject }) => {
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white text-gray-950 text-sm font-medium hover:bg-gray-200 transition"
             >
-              Live Demo
+              Demo Langsung
               <ArrowUpRight size={16} />
             </a>
           )}

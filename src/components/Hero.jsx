@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-blue-400 font-medium mb-4">
-              Hello, I'm
+              Halo, saya
             </p>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
@@ -37,9 +37,9 @@ const Hero = () => {
                 sequence={[
                   "Data Analyst",
                   2000,
-                  "Machine Learning Enthusiast",
+                  "Peminat Machine Learning",
                   2000,
-                  "Web Developer",
+                  "Pengembang Web",
                   2000,
                 ]}
                 wrapper="span"
@@ -49,9 +49,9 @@ const Hero = () => {
             </div>
 
             <p className="mt-6 max-w-xl text-gray-400 leading-relaxed">
-            Fresh graduate in Information Systems with interests in data analytics,
-            machine learning, and web development. I enjoy transforming data into
-            insights and building practical digital solutions.
+            Lulusan Sistem Informasi Universitas Mulawarman yang berfokus pada analisis data,
+            data science, dan business intelligence. Saya mengolah data menjadi
+            insight yang dapat digunakan serta mengembangkan solusi digital.
             </p>
 
             {/* Buttons */}
@@ -63,7 +63,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-gray-950 font-medium hover:bg-gray-200 transition"
             >
               <Download size={18} />
-              Download CV
+              Unduh CV
             </a>
 
               <a
@@ -123,7 +123,7 @@ const Hero = () => {
           transition={{ delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-gray-500 hover:text-white transition"
         >
-          <span className="text-xs">Scroll to explore</span>
+          <span className="text-xs">Gulir untuk menjelajahi</span>
           <ArrowDown size={16} className="animate-bounce" />
         </motion.a>
 

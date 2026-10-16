@@ -11,7 +11,7 @@ const Skills = () => {
   const skillGroups = [
     {
       icon: Code2,
-      title: "Programming",
+      title: "Pemrograman",
       skills: [
         "Python",
         "SQL",
@@ -22,13 +22,13 @@ const Skills = () => {
 
     {
       icon: BarChart3,
-      title: "Data Analytics",
+      title: "Analisis Data",
       skills: [
-        "Data Cleaning",
-        "Data Analysis",
+        "Pembersihan Data",
+        "Analisis Data",
         "EDA",
-        "Data Visualization",
-        "Customer Segmentation",
+        "Visualisasi Data",
+        "Segmentasi Pelanggan",
         "Microsoft Excel",
         "Tableau",
         "Looker Studio",
@@ -40,12 +40,12 @@ const Skills = () => {
       icon: BrainCircuit,
       title: "Machine Learning",
       skills: [
-        "Classification",
-        "Clustering",
+        "Klasifikasi",
+        "Klasterisasi",
         "CNN",
-        "Data Preprocessing",
-        "Feature Engineering",
-        "Model Evaluation",
+        "Prapemrosesan Data",
+        "Rekayasa Fitur",
+        "Evaluasi Model",
         "TensorFlow",
         "Scikit-learn",
         "OpenCV",
@@ -54,7 +54,7 @@ const Skills = () => {
 
     {
       icon: Globe,
-      title: "Web Development",
+      title: "Pengembangan Web",
       skills: [
         "HTML",
         "CSS",
@@ -69,7 +69,7 @@ const Skills = () => {
 
     {
       icon: Database,
-      title: "Database & Tools",
+      title: "Basis Data & Tools",
       skills: [
         "MySQL",
         "MariaDB",
@@ -92,21 +92,20 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-blue-400 font-medium mb-3">
-            Skills
+            Keahlian
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-            Tools I use to
+            Keahlian dan tools untuk
             <span className="text-blue-400">
-              {" "}solve problems.
+              {" "}menyelesaikan masalah.
             </span>
           </h2>
 
           <p className="mt-5 text-gray-400 max-w-2xl text-lg leading-relaxed">
-            A combination of programming, data analytics, machine
-            learning, and web development skills developed through
-            academic projects, independent learning, and practical
-            experience.
+            Kemampuan pemrograman, analisis data, machine learning, dan pengembangan web
+            yang dibangun melalui proyek akademik, pembelajaran mandiri,
+            serta pengalaman praktik.
           </p>
         </motion.div>
 

@@ -22,18 +22,18 @@ const Contact = () => {
 
             {/* Heading */}
             <p className="text-blue-400 font-medium mb-3">
-              Contact
+              Kontak
             </p>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white max-w-3xl">
-              Let's build something
-              <span className="text-blue-400"> useful.</span>
+              Mari membangun sesuatu
+              <span className="text-blue-400"> yang bermanfaat.</span>
             </h2>
 
             <p className="mt-5 text-gray-400 text-lg max-w-2xl leading-relaxed">
-              I'm open to opportunities, collaborations, and projects
-              related to data analytics, machine learning, and web
-              development.
+              Saya terbuka terhadap peluang kerja dan kolaborasi di bidang
+              analisis data, data science, business intelligence,
+              dan pengembangan web.
             </p>
 
             {/* Email */}
@@ -66,7 +66,7 @@ const Contact = () => {
                 href="mailto:myusril785@gmail.com"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-gray-950 font-medium hover:bg-gray-200 transition"
               >
-                Send Email
+                Kirim Email
                 <ArrowUpRight size={17} />
               </a>
 

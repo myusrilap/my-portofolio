@@ -5,21 +5,21 @@ const About = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Information Systems",
+      title: "Sistem Informasi",
       description:
-        "Building a foundation in information systems, software development, databases, and technology.",
+        "Memiliki dasar pendidikan sistem informasi, pengembangan perangkat lunak, basis data, dan teknologi.",
     },
     {
       icon: Database,
-      title: "Data & Analytics",
+      title: "Analisis Data & BI",
       description:
-        "Interested in turning raw data into meaningful insights through analysis and visualization.",
+        "Mengubah data mentah menjadi informasi yang berguna melalui analisis, SQL, dan visualisasi.",
     },
     {
       icon: BrainCircuit,
       title: "Machine Learning",
       description:
-        "Exploring machine learning and deep learning through practical projects and research.",
+        "Mempelajari machine learning dan deep learning melalui penelitian serta proyek berbasis praktik.",
     },
   ];
 
@@ -35,12 +35,12 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-blue-400 font-medium mb-3">
-            About Me
+            Tentang Saya
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-            Turning curiosity into
-            <span className="text-blue-400"> practical solutions.</span>
+            Mengubah rasa ingin tahu menjadi
+            <span className="text-blue-400"> solusi nyata.</span>
           </h2>
         </motion.div>
 
@@ -53,16 +53,13 @@ const About = () => {
           className="mt-8 max-w-3xl"
         >
           <p className="text-gray-400 text-lg leading-relaxed">
-          I’m an Information Systems fresh graduate focused on Data, Machine Learning, and Web Development. 
-          I enjoy transforming data into insights, building intelligent solutions
-          and creating web applications that solve real-world problems.
+          Saya lulusan Sistem Informasi yang berfokus pada analisis data, data science, dan business intelligence. Saya mengolah data menjadi insight, membangun model analitik, dan mengembangkan aplikasi web.
           </p>
 
           <p className="mt-5 text-gray-400 text-lg leading-relaxed">
-            My projects have allowed me to work with data analysis,
-            customer segmentation, machine learning, data visualization,
-            and web development. I am continuously learning and
-            improving my technical skills through hands-on projects.
+            Melalui proyek akademik dan praktik, saya berpengalaman dalam analisis data,
+            segmentasi pelanggan, machine learning, visualisasi data, serta pengembangan web.
+            Saya terus mengembangkan kemampuan teknis melalui penyelesaian masalah nyata.
           </p>
         </motion.div>
 
