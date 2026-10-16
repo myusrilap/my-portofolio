@@ -67,7 +67,7 @@ const Projects = () => {
 
         findings: [
           "VGG16 without ROI segmentation achieved better classification performance than the segmentation-based pipeline.",
-          "Adding U-Net ROI masking reduced test accuracy from 98% to 87%; segmentation did not benefit this classification setup.",
+          "Penggunaan ROI U-Net menghasilkan akurasi 87%, lebih rendah daripada baseline VGG16 sebesar 98%.",
           "Perbedaan karakteristik citra MRI pada dataset segmentasi dan klasifikasi menjadi dugaan utama penurunan performa U-Net; penghilangan konteks akibat masking ROI juga merupakan kemungkinan, bukan faktor yang telah dibuktikan secara terpisah.",
         ],
       },
@@ -132,8 +132,8 @@ const Projects = () => {
         ],
 
         findings: [
-          "Customer segmentation was used to prioritize sales visits.",
-          "Historical visit patterns can support sales scheduling decisions.",
+          "Segmentasi pelanggan digunakan untuk menyusun prioritas kunjungan sales.",
+          "Pola kunjungan historis menjadi dasar rekomendasi hari dan jadwal kunjungan sales.",
           "Dalam simulasi TSP menggunakan Google OR-Tools, total jarak rute hasil optimasi berkurang hingga 25% dibanding total jarak aktual yang ditempuh sales pada data pembanding. Ini bukan penghematan biaya yang sudah diverifikasi di lapangan.",
           "Rekomendasi utama mencakup penjadwalan kunjungan sales, prioritas pelanggan berdasarkan segmentasi, dan urutan kunjungan yang lebih efisien. Kontribusi pribadi saya adalah preprocessing, SQL, dan optimasi rute.",
         ],
@@ -263,7 +263,7 @@ const Projects = () => {
         ],
 
         findings: [
-          "Implemented a multi-page responsive informational prototype with navigation, news, galleries, environmental resources, and UI interactions.",
+          "Mengimplementasikan prototipe multihalaman responsif yang mencakup navigasi, berita, galeri, informasi lingkungan, dan interaksi antarmuka.",
           "Fitur antarmuka dapat diinteraksikan, tetapi website secara keseluruhan tetap merupakan prototipe pembelajaran, bukan layanan pemerintah atau organisasi resmi.",
         ],
       },
@@ -324,7 +324,7 @@ const Projects = () => {
           ],
       
           findings: [
-            "Delivered frontend interface components for an internal room-booking workflow, including dashboard and booking-related views.",
+            "Mengembangkan seluruh komponen frontend alur peminjaman ruang, termasuk tampilan dashboard dan halaman peminjaman.",
             "Saya mengimplementasikan seluruh halaman frontend dengan Bootstrap/AdminLTE, sedangkan backend dan integrasi sistem merupakan cakupan tim.",
             "Implementasi berlangsung saat PKL di BKPSDM Samarinda. Tidak ada klaim peningkatan produktivitas atau pengurangan durasi peminjaman yang belum diukur.",
           ],
@@ -386,8 +386,8 @@ const Projects = () => {
           ],
       
           findings: [
-            "Implemented frontend pages for a KKN tourism-information site covering attractions, facilities, events, and gallery content.",
-            "The site provides a navigable, responsive information interface; the work was developed collaboratively with the KKN team.",
+            "Mengimplementasikan halaman frontend informasi wisata, fasilitas, acara, dan galeri dalam proyek KKN.",
+            "Website menyediakan halaman informasi wisata yang responsif dan dikembangkan bersama tim KKN.",
             "Hasil proyek merupakan website informasi wisata yang dikembangkan bersama tim KKN; belum terdapat data pemakaian resmi atau bukti dampak terhadap kunjungan wisata.",
           ],
         },
