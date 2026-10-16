@@ -53,9 +53,7 @@ const About = () => {
           className="mt-8 max-w-3xl"
         >
           <p className="text-gray-400 text-lg leading-relaxed">
-          I’m an Sistem Informasi fresh graduate focused on Data, Machine Learning, and Web Development. 
-          I enjoy transforming data into insights, building intelligent solutions
-          and creating web applications that solve real-world problems.
+          Saya lulusan Sistem Informasi yang berfokus pada analisis data, data science, dan business intelligence. Saya mengolah data menjadi insight, membangun model analitik, dan mengembangkan aplikasi web.
           </p>
 
           <p className="mt-5 text-gray-400 text-lg leading-relaxed">
