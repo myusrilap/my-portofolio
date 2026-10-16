@@ -246,7 +246,7 @@ const Projects = () => {
         results: [
           {
             label: "Jenis Proyek",
-            value: "Web Development",
+            value: "Pengembangan Web",
           },
           {
             label: "Teknologi Utama",
@@ -395,7 +395,7 @@ const Projects = () => {
     {
       contribution: "Analisis eksploratif, pemodelan K-Means, dan implementasi visualisasi Streamlit.",
       title: "Customer Segmentation",
-      category: "Data Analytics",
+      category: "Analisis Data",
       description:
         "Segmentasi pelanggan dengan K-Means menjadi empat klaster berdasarkan karakteristik belanja dan kategori produk, ditampilkan melalui Streamlit.",
       technologies: [
@@ -432,7 +432,7 @@ const Projects = () => {
         results: [
           {
             label: "Jenis Proyek",
-            value: "Data Analytics",
+            value: "Analisis Data",
           },
           {
             label: "Metode Utama",
@@ -520,7 +520,7 @@ const Projects = () => {
 
           {renderProjectGroup(
             webProjects,
-            "Web Development",
+            "Pengembangan Web",
             "Implementasi antarmuka dan website responsif untuk kebutuhan organisasi serta masyarakat.",
             "web-projects"
           )}
