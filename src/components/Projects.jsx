@@ -47,19 +47,19 @@ const Projects = () => {
 
         results: [
           {
-            label: "Baseline",
+            label: "Model Dasar",
             value: "98% akurasi uji tanpa ROI",
           },
           {
-            label: "Experimental Model",
+            label: "Model Eksperimen",
             value: "87% akurasi uji dengan ROI",
           },
           {
-            label: "Classification Classes",
+            label: "Kelas Klasifikasi",
             value: "Glioma, Meningioma, Pituitary, No Tumor",
           },
           {
-            label: "Main Finding",
+            label: "Temuan Utama",
             value:
               "11-percentage-point higher test accuracy without ROI",
           },
@@ -114,19 +114,19 @@ const Projects = () => {
 
         results: [
           {
-            label: "High-Priority Customers",
+            label: "Pelanggan Prioritas Tinggi",
             value: "2,660 customers",
           },
           {
-            label: "Largest Customer Segment",
+            label: "Segmen Pelanggan Terbesar",
             value: "At-Risk Customers — 13,867 users",
           },
           {
-            label: "Route Optimization",
+            label: "Optimasi Rute",
             value: "Up to 25% route-distance reduction (simulation)",
           },
           {
-            label: "Visualization",
+            label: "Visualisasi",
             value: "Tableau Dashboard",
           },
         ],
@@ -161,10 +161,10 @@ const Projects = () => {
           "Menyusun tabel hasil analisis sebagai sumber visualisasi."
         ],
         results: [
-          { label: "Observations", value: "374" },
-          { label: "Average Sleep Duration", value: "7.13 hours" },
-          { label: "Stress vs Sleep Quality", value: "Spearman −0.908" },
-          { label: "High vs Low Stress", value: "3.05-point difference in average sleep quality" }
+          { label: "Observasi", value: "374" },
+          { label: "Rata-rata Durasi Tidur", value: "7.13 hours" },
+          { label: "Stres vs Kualitas Tidur", value: "Spearman −0.908" },
+          { label: "Stres Tinggi vs Rendah", value: "3.05-point difference in average sleep quality" }
         ],
         findings: [
           "Kelompok stres tinggi memiliki rata-rata kualitas tidur 5,92 dibanding 8,97 pada kelompok stres rendah, selisih 3,05 poin.",
@@ -193,10 +193,10 @@ const Projects = () => {
           "Menggunakan uji chi-square untuk memeriksa signifikansi selisih promosi dan pelatihan."
         ],
         results: [
-          { label: "Workforce Records", value: "5,000" },
-          { label: "Female Representation", value: "40.72%" },
-          { label: "Leadership Training", value: "28.44% female vs 30.40% male" },
-          { label: "Promotion Rate", value: "20.38% female vs 20.99% male" }
+          { label: "Data Karyawan", value: "5,000" },
+          { label: "Representasi Perempuan", value: "40.72%" },
+          { label: "Pelatihan Kepemimpinan", value: "28.44% female vs 30.40% male" },
+          { label: "Tingkat Promosi", value: "20.38% female vs 20.99% male" }
         ],
         findings: [
           "Partisipasi pelatihan perempuan 28,44% dan laki-laki 30,40% (selisih 1,96 poin persentase), lebih besar daripada selisih promosi 0,61 poin.",
@@ -245,20 +245,20 @@ const Projects = () => {
 
         results: [
           {
-            label: "Project Type",
+            label: "Jenis Proyek",
             value: "Web Development",
           },
           {
-            label: "Main Technologies",
+            label: "Teknologi Utama",
             value: "HTML, CSS, JavaScript, Bootstrap",
           },
           {
-            label: "Main Focus",
-            value: "Environmental Information",
+            label: "Fokus Utama",
+            value: "Informasi Lingkungan",
           },
           {
-            label: "Project Status",
-            value: "Prototype / Educational Project",
+            label: "Status Proyek",
+            value: "Prototipe / Proyek Pembelajaran",
           },
         ],
 
@@ -272,7 +272,7 @@ const Projects = () => {
       {
         contribution: "Seluruh implementasi frontend; backend dan sistem keseluruhan merupakan pekerjaan tim.",
         title: "Website SIPARUNG",
-        category: "Web Development",
+        category: "Pengembangan Web",
         description:
           "Antarmuka sistem peminjaman ruang internal BKPSDM Samarinda; saya mengerjakan seluruh bagian frontend dalam proyek kolaboratif.",
         technologies: [
@@ -306,19 +306,19 @@ const Projects = () => {
       
           results: [
             {
-              label: "Project Type",
-              value: "Internal Web Application",
+              label: "Jenis Proyek",
+              value: "Aplikasi Web Internal",
             },
             {
-              label: "Organization",
+              label: "Organisasi",
               value: "BKPSDM Samarinda",
             },
             {
-              label: "Main Contribution",
-              value: "Frontend Development",
+              label: "Kontribusi Utama",
+              value: "Pengembangan Frontend",
             },
             {
-              label: "Purpose",
+              label: "Tujuan",
               value: "Internal Room Reservation",
             },
           ],
@@ -368,20 +368,20 @@ const Projects = () => {
       
           results: [
             {
-              label: "Project Type",
-              value: "Functional Web Application",
+              label: "Jenis Proyek",
+              value: "Aplikasi Web Fungsional",
             },
             {
-              label: "Main Contribution",
-              value: "Frontend Development",
+              label: "Kontribusi Utama",
+              value: "Pengembangan Frontend",
             },
             {
-              label: "Project Context",
+              label: "Konteks Proyek",
               value: "KKN",
             },
             {
-              label: "Purpose",
-              value: "Kelurahan Lamaru Information",
+              label: "Tujuan",
+              value: "Informasi Kelurahan Lamaru",
             },
           ],
       
@@ -431,19 +431,19 @@ const Projects = () => {
 
         results: [
           {
-            label: "Project Type",
+            label: "Jenis Proyek",
             value: "Data Analytics",
           },
           {
-            label: "Main Method",
+            label: "Metode Utama",
             value: "K-Means (4 klaster)",
           },
           {
-            label: "Main Tool",
+            label: "Tools Utama",
             value: "Python",
           },
           {
-            label: "Output",
+            label: "Luaran",
             value: "Empat kelompok pelanggan",
           },
         ],
