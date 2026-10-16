@@ -37,22 +37,22 @@ const Projects = () => {
           "Menguji apakah pemisahan area tumor dengan U-Net meningkatkan akurasi klasifikasi empat kelas MRI: glioma, meningioma, pituitari, dan tanpa tumor.",
 
         process: [
-          "Preprocessed MRI images with resizing to 224×224, CLAHE enhancement, normalization, and training augmentation.",
-          "Used a stratified 70/15/15 split of 7,200 classification images across four balanced classes, with 1,080 test images.",
-          "Development of a baseline VGG16 classification model.",
-          "Trained VGG16-encoder U-Net on a separate segmentation dataset; the segmentation model reached IoU 0.8224.",
-          "Classification using MRI images with and without ROI segmentation.",
-          "Evaluation using accuracy, precision, recall, F1-score, and confusion matrix.",
+          "Melakukan preprocessing MRI: resize 224×224, CLAHE, normalisasi, dan augmentasi data latih.",
+          "Membagi 7.200 citra MRI menjadi data latih, validasi, dan uji (70:15:15) secara stratified; 1.080 citra digunakan untuk pengujian.",
+          "Melatih model klasifikasi dasar menggunakan VGG16.",
+          "Melatih segmentasi U-Net ber-encoder VGG16 pada dataset terpisah dengan IoU 0,8224.",
+          "Membandingkan klasifikasi citra asli dengan klasifikasi setelah masking ROI.",
+          "Mengevaluasi akurasi, presisi, recall, F1-score, dan confusion matrix.",
         ],
 
         results: [
           {
             label: "Baseline",
-            value: "98% test accuracy (without ROI)",
+            value: "98% akurasi uji tanpa ROI",
           },
           {
             label: "Experimental Model",
-            value: "87% test accuracy (with ROI)",
+            value: "87% akurasi uji dengan ROI",
           },
           {
             label: "Classification Classes",
@@ -102,14 +102,14 @@ const Projects = () => {
           "Meningkatkan efisiensi perencanaan kunjungan sales melalui analisis jadwal, segmentasi pelanggan, dan pengurangan total jarak perjalanan.",
 
         process: [
-          "Clean and prepare business datasets.",
-          "Segment customers into four groups using RFM features and K-Means clustering.",
-          "Analyze sales representative visit patterns.",
-          "Identify customer visit priorities and visit frequency.",
-          "Analyze historical visit days and hours.",
-          "Optimize sales routes using TSP and Guided Local Search with Google OR-Tools.",
-          "Perform business analysis using SQL.",
-          "Visualize findings using Tableau.",
+          "Membersihkan dan menggabungkan dataset transaksi, kunjungan, dan pelanggan (kontribusi pribadi).",
+          "Melakukan segmentasi RFM dan K-Means menjadi empat kelompok pelanggan bersama tim.",
+          "Menganalisis pola dan riwayat kunjungan sales menggunakan SQL (kontribusi pribadi).",
+          "Mengidentifikasi prioritas pelanggan dan frekuensi kunjungan.",
+          "Membandingkan hari dan jam kunjungan berdasarkan data historis.",
+          "Mengoptimasi urutan kunjungan dengan TSP, Guided Local Search, dan Google OR-Tools (kontribusi pribadi).",
+          "Menyusun query SQL untuk menjawab pertanyaan bisnis (kontribusi pribadi).",
+          "Menyajikan hasil dalam dashboard Tableau sebagai bagian dari pekerjaan tim.",
         ],
 
         results: [
@@ -154,11 +154,11 @@ const Projects = () => {
         overview: "Analisis 374 observasi gaya hidup dan tidur menggunakan Python untuk pembersihan data, SQLite untuk agregasi, serta korelasi untuk mengidentifikasi pola kualitas tidur.",
         problem: "Mengukur hubungan stres, durasi tidur, aktivitas fisik, dan pekerjaan dengan kualitas tidur untuk menemukan faktor pembeda utama pada 374 observasi.",
         process: [
-          "Validated and cleaned 374 observations with Python, including categorical normalization.",
-          "Prepared indicators for occupation, sleep disorder, stress levels, and sleep duration.",
-          "Used SQL aggregations, CTEs, and window functions to compare sleep patterns across groups.",
-          "Analyzed Spearman correlations and interpreted group-level differences.",
-          "Prepared analytical outputs for Tableau visualization."
+          "Memvalidasi dan membersihkan 374 observasi menggunakan Python.",
+          "Menyiapkan pengelompokan pekerjaan, kategori gangguan tidur, stres, dan durasi tidur.",
+          "Memakai agregasi, CTE, dan window function SQL untuk membandingkan pola tidur antarkelompok.",
+          "Mengukur korelasi Spearman dan menjelaskan selisih rata-rata antarkelompok.",
+          "Menyusun tabel hasil analisis sebagai sumber visualisasi."
         ],
         results: [
           { label: "Observations", value: "374" },
@@ -186,11 +186,11 @@ const Projects = () => {
         overview: "Studi kasus SDM fiktif dengan 5.000 catatan untuk membandingkan representasi gender, gaji, promosi, pelatihan, dan kesempatan pengembangan karier.",
         problem: "Mengidentifikasi pola perbedaan gender dengan memperhitungkan variasi perusahaan, departemen, dan jenjang jabatan agar kesimpulan tidak bergantung pada rata-rata agregat.",
         process: [
-          "Prepared 5,000 workforce records using Python, standardizing gender and job-level labels.",
-          "Validated salary fields before computing pay indicators.",
-          "Used SQL to compare promotions, training rates, departments, and comparable job levels.",
-          "Compared salary within company, department, and job-level groups.",
-          "Evaluated aggregated promotion and training differences with chi-square tests."
+          "Membersihkan 5.000 data karyawan simulasi dan menstandarkan label gender serta jabatan.",
+          "Memvalidasi nilai gaji sebelum menghitung indikator kompensasi.",
+          "Membandingkan promosi, pelatihan, departemen, dan jenjang jabatan melalui SQL.",
+          "Membandingkan gaji dalam kelompok perusahaan–departemen–level jabatan yang sebanding.",
+          "Menggunakan uji chi-square untuk memeriksa signifikansi selisih promosi dan pelatihan."
         ],
         results: [
           { label: "Workforce Records", value: "5,000" },
@@ -235,12 +235,12 @@ const Projects = () => {
           "Menyajikan informasi lingkungan, berita, galeri, dan kanal pengaduan dalam antarmuka web yang mudah dinavigasi; fitur tetap merupakan prototipe pembelajaran.",
 
         process: [
-          "Design the website structure and navigation.",
-          "Develop the landing page and organizational information.",
-          "Create gallery and news pages.",
-          "Develop environmental information pages.",
-          "Create prototype environmental complaint and registration features.",
-          "Implement responsive interface components.",
+          "Merancang struktur halaman dan navigasi website.",
+          "Mengembangkan halaman utama dan informasi organisasi.",
+          "Membuat halaman galeri dan berita.",
+          "Mengembangkan halaman informasi lingkungan.",
+          "Mengimplementasikan antarmuka pengaduan dan pendaftaran sebagai fitur prototipe.",
+          "Menerapkan komponen frontend responsif dan interaktif.",
         ],
 
         results: [
@@ -297,11 +297,11 @@ const Projects = () => {
             "Kebutuhan sistem adalah memudahkan pegawai melihat, mengajukan, dan mengelola permohonan peminjaman ruang melalui alur antarmuka yang tertata.",
       
           process: [
-            "Analyze the interface and user flow requirements for the room reservation process.",
-            "Design and develop the frontend interface of the SIPARUNG website.",
-            "Implement website pages and interactive interface components.",
-            "Improve the layout and usability to make the reservation process easier to understand.",
-            "Integrate the frontend with the existing application components.",
+            "Menganalisis kebutuhan antarmuka dan alur peminjaman ruang.",
+            "Merancang dan membangun seluruh antarmuka frontend SIPARUNG.",
+            "Mengimplementasikan halaman dan komponen interaktif sistem.",
+            "Menyempurnakan tata letak dan navigasi proses peminjaman.",
+            "Mengintegrasikan antarmuka dengan komponen sistem yang dikerjakan tim.",
           ],
       
           results: [
@@ -358,12 +358,12 @@ const Projects = () => {
             "Menyatukan informasi wisata dan kegiatan lokal pada satu website yang mudah diakses dan responsif. Website merupakan produk pengembangan KKN, tanpa klaim penggunaan resmi oleh kelurahan.",
       
           process: [
-            "Analyze the information and content that needed to be presented on the website.",
-            "Design the website structure and user interface.",
-            "Develop the frontend pages and interface components.",
-            "Implement event, facilities, gallery, and informational sections.",
-            "Use structured JSON data to support dynamic website content.",
-            "Refine the interface layout and user experience across the website.",
+            "Menganalisis konten informasi wisata dan kegiatan lokal.",
+            "Merancang struktur halaman serta antarmuka website.",
+            "Mengimplementasikan halaman dan komponen frontend.",
+            "Mengembangkan halaman kegiatan, fasilitas, galeri, dan informasi wisata.",
+            "Menggunakan data JSON untuk menampilkan konten website.",
+            "Menyempurnakan tampilan responsif dan pengalaman navigasi.",
           ],
       
           results: [
@@ -420,13 +420,13 @@ const Projects = () => {
           "Mengelompokkan pola belanja pelanggan berdasarkan kelompok usia, gender, kategori pengeluaran, tingkat harga, dan kategori produk agar strategi pemasaran dapat lebih terarah.",
 
         process: [
-          "Load and inspect customer data.",
-          "Clean and prepare the dataset.",
-          "Perform exploratory analysis.",
-          "Prepare relevant features for segmentation.",
+          "Memuat dan memeriksa dataset pelanggan.",
+          "Membersihkan serta menyiapkan dataset untuk analisis.",
+          "Mengeksplorasi distribusi usia, gender, nilai belanja, dan kategori produk.",
+          "Memilih fitur segmentasi serta melakukan transformasi dan normalisasi.",
           "Menormalisasi fitur dengan MinMaxScaler lalu menerapkan K-Means dengan k=4. Jumlah klaster dipilih menggunakan pendekatan Elbow Method, tetapi grafik/implementasi Elbow belum tercantum di repository.",
-          "Analyze and interpret the resulting customer groups.",
-          "Prepare visual outputs to communicate the segmentation results.",
+          "Mendeskripsikan karakteristik empat klaster berdasarkan pola belanja.",
+          "Memvisualisasikan hasil klaster melalui PCA dan antarmuka Streamlit.",
         ],
 
         results: [
@@ -436,7 +436,7 @@ const Projects = () => {
           },
           {
             label: "Main Method",
-            value: "K-Means (4 clusters)",
+            value: "K-Means (4 klaster)",
           },
           {
             label: "Main Tool",
@@ -444,7 +444,7 @@ const Projects = () => {
           },
           {
             label: "Output",
-            value: "Four customer groups",
+            value: "Empat kelompok pelanggan",
           },
         ],
 
