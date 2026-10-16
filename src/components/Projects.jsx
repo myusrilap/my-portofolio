@@ -457,10 +457,10 @@ const Projects = () => {
   ];
 
   const dataProjects = projects.filter(
-    (project) => !project.category.startsWith("Web Development")
+    (project) => !project.category.startsWith("Pengembangan Web")
   );
   const webProjects = projects.filter(
-    (project) => project.category.startsWith("Web Development")
+    (project) => project.category.startsWith("Pengembangan Web")
   );
 
   const renderProjectGroup = (items, heading, subtitle, groupId) => (
