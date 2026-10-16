@@ -139,6 +139,70 @@ const Projects = () => {
       },
     },
 
+
+    {
+      title: "Sleep Health & Lifestyle Analytics",
+      category: "Data Analytics / SQL",
+      description: "Analyzed 374 sleep and lifestyle records to uncover relationships between stress, sleep quality, sleep duration, and occupation.",
+      technologies: ["Python", "Pandas", "SQL", "SQLite", "Tableau", "Statistics"],
+      icon: "🌙",
+      featured: false,
+      githubPath: "myusrilap/Sleep-Health-Lifestyle-Analytics",
+      details: {
+        overview: "End-to-end analysis of the Sleep Health and Lifestyle dataset, from Python preprocessing to SQL-based insights and visualization-ready data.",
+        problem: "Explore how stress levels, sleeping duration, occupation, and lifestyle characteristics relate to sleep quality in a dataset of 374 observations.",
+        process: [
+          "Validated and cleaned 374 observations with Python, including categorical normalization.",
+          "Prepared indicators for occupation, sleep disorder, stress levels, and sleep duration.",
+          "Used SQL aggregations, CTEs, and window functions to compare sleep patterns across groups.",
+          "Analyzed Spearman correlations and interpreted group-level differences.",
+          "Prepared analytical outputs for Tableau visualization."
+        ],
+        results: [
+          { label: "Observations", value: "374" },
+          { label: "Average Sleep Duration", value: "7.13 hours" },
+          { label: "Stress vs Sleep Quality", value: "Spearman −0.908" },
+          { label: "High vs Low Stress", value: "3.05-point difference in average sleep quality" }
+        ],
+        findings: [
+          "The high-stress group recorded a 5.92 average sleep-quality score, compared with 8.97 in the low-stress group.",
+          "Sleep duration was positively associated with sleep quality (Spearman +0.887).",
+          "The analysis describes associations in the sample rather than cause-and-effect relationships."
+        ]
+      }
+    },
+    {
+      title: "GenderBridge — Workforce Equality Analytics",
+      category: "Data Analytics / HR Analytics",
+      description: "Examined gender representation, comparable-role salary differences, promotions, and leadership training in a 5,000-record workforce case study.",
+      technologies: ["Python", "Pandas", "SQL", "SQLite", "Tableau", "Statistical Analysis"],
+      icon: "⚖️",
+      featured: false,
+      githubPath: "myusrilap/GenderBridge-Workforce-Equality-Analytics",
+      details: {
+        overview: "A fictional workforce equality case study evaluating compensation, representation, and career opportunities across companies, departments, and job levels.",
+        problem: "Identify where differences in representation, salary, promotion, and leadership training appear across gender groups and job categories.",
+        process: [
+          "Prepared 5,000 workforce records using Python, standardizing gender and job-level labels.",
+          "Validated salary fields before computing pay indicators.",
+          "Used SQL to compare promotions, training rates, departments, and comparable job levels.",
+          "Compared salary within company, department, and job-level groups.",
+          "Evaluated aggregated promotion and training differences with chi-square tests."
+        ],
+        results: [
+          { label: "Workforce Records", value: "5,000" },
+          { label: "Female Representation", value: "40.72%" },
+          { label: "Leadership Training", value: "28.44% female vs 30.40% male" },
+          { label: "Promotion Rate", value: "20.38% female vs 20.99% male" }
+        ],
+        findings: [
+          "The overall leadership-training participation gap of 1.96 percentage points was larger than the 0.61-point promotion-rate gap.",
+          "Differences varied across departments and job levels rather than following a uniform pattern.",
+          "Aggregate promotion and training differences were not statistically significant at the 5% level. Findings relate to fictional case-study data, not an audit of real employers."
+        ]
+      }
+    },
+
     {
       title: "ECO Samarinda",
       category: "Web Development",
@@ -335,7 +399,7 @@ const Projects = () => {
         "Data Analysis",
       ],
       icon: "👥",
-      image: "/projects/customer-segmentation.png",
+      image: `${BASE_URL}projects/customer-segmentation.png`,
       featured: false,
 
       githubPath:
@@ -385,65 +449,74 @@ const Projects = () => {
     },
   ];
 
-  const featuredProjects = projects.filter(
-    (project) => project.featured
+  const dataProjects = projects.filter(
+    (project) => !project.category.startsWith("Web Development")
+  );
+  const webProjects = projects.filter(
+    (project) => project.category.startsWith("Web Development")
   );
 
-  const otherProjects = projects.filter(
-    (project) => !project.featured
+  const renderProjectGroup = (items, heading, subtitle, groupId) => (
+    <div aria-labelledby={groupId} className="mt-16 first:mt-12">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7">
+        <div>
+          <h3 id={groupId} className="text-2xl sm:text-3xl font-bold text-white">
+            {heading}
+          </h3>
+          <p className="mt-2 text-gray-400 max-w-2xl leading-relaxed">
+            {subtitle}
+          </p>
+        </div>
+        <span className="self-start text-xs font-medium text-blue-300 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1.5">
+          {items.length} Projects
+        </span>
+      </div>
+      <div className="grid md:grid-cols-2 gap-5">
+        {items.map((project, index) => (
+          <ProjectCard
+            key={project.title}
+            project={project}
+            index={index}
+            onViewProject={setSelectedProject}
+          />
+        ))}
+      </div>
+    </div>
   );
 
   return (
     <>
       <section id="projects" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-
-          {/* Heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-blue-400 font-medium mb-3">
-              Projects
-            </p>
-
+            <p className="text-blue-400 font-medium mb-3">Projects</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-              Selected
-              <span className="text-blue-400"> work.</span>
+              Selected<span className="text-blue-400"> work.</span>
             </h2>
-
             <p className="mt-5 text-gray-400 max-w-2xl text-lg leading-relaxed">
-              A selection of academic, research, data analytics,
-              and web development projects.
+              A collection of projects in data analytics, machine learning,
+              research, and web development.
             </p>
           </motion.div>
 
-          {/* Featured Project */}
-          <div className="mt-12">
-            {featuredProjects.map((project, index) => (
-              <ProjectCard
-                key={project.title}
-                project={project}
-                index={index}
-                onViewProject={setSelectedProject}
-              />
-            ))}
-          </div>
+          {renderProjectGroup(
+            dataProjects,
+            "Data Analytics & Machine Learning",
+            "Business analytics, data-driven insights, clustering, and deep learning research.",
+            "data-projects"
+          )}
 
-          {/* Other Projects */}
-          <div className="grid md:grid-cols-2 gap-5 mt-5">
-            {otherProjects.map((project, index) => (
-              <ProjectCard
-                key={project.title}
-                project={project}
-                index={index + 1}
-                onViewProject={setSelectedProject}
-              />
-            ))}
-          </div>
-
+          {renderProjectGroup(
+            webProjects,
+            "Web Development",
+            "Frontend development and responsive websites for organizations and communities.",
+            "web-projects"
+          )}
         </div>
       </section>
 
