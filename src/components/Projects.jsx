@@ -9,10 +9,11 @@ const Projects = () => {
 
   const projects = [
     {
+      contribution: "Penelitian dan implementasi model klasifikasi serta segmentasi MRI secara mandiri.",
       title: "Brain Tumor Classification",
-      category: "Machine Learning / Undergraduate Thesis",
+      category: "Machine Learning / Skripsi",
       description:
-        "Comparative analysis of brain tumor classification using VGG16 with and without U-Net-based ROI segmentation on MRI images.",
+        "Membandingkan klasifikasi tumor otak pada citra MRI menggunakan VGG16 dengan dan tanpa segmentasi ROI U-Net; akurasi pengujian 98% berbanding 87%.",
       technologies: [
         "Python",
         "TensorFlow",
@@ -67,16 +68,16 @@ const Projects = () => {
         findings: [
           "VGG16 without ROI segmentation achieved better classification performance than the segmentation-based pipeline.",
           "Adding U-Net ROI masking reduced test accuracy from 98% to 87%; segmentation did not benefit this classification setup.",
-          "A likely explanation is that hard ROI masking removes contextual MRI information; the different segmentation and classification datasets may also contribute.",
+          "Perbedaan karakteristik citra MRI pada dataset segmentasi dan klasifikasi menjadi dugaan utama penurunan performa U-Net; penghilangan konteks akibat masking ROI juga merupakan kemungkinan, bukan faktor yang telah dibuktikan secara terpisah.",
         ],
       },
     },
 
     {
-      title: "Business Data Analytics — Dagangan",
-      category: "Data Analytics / Academic Team Project",
+      title: "Business Analisis Data — Dagangan",
+      category: "Analisis Data / Proyek Tim",
       description:
-        "Analyzed customer transactions and sales visits, built RFM customer segments, and simulated more efficient representative routes using Google OR-Tools.",
+        "Analisis transaksi dan kunjungan sales, segmentasi pelanggan RFM, serta optimasi rute kunjungan menggunakan SQL dan Google OR-Tools.",
       technologies: [
         "Python",
         "Pandas",
@@ -98,7 +99,7 @@ const Projects = () => {
           "Academic Project Based Learning project focused on business data analysis using the Dagangan case study. The project combines customer segmentation, sales visit analysis, route optimization, SQL analysis, and Tableau visualization.",
 
         problem:
-          "The analysis focuses on improving sales visit efficiency by understanding customer segments, visit frequency, scheduling patterns, route efficiency, and the relationship between sales visits and transactions.",
+          "Meningkatkan efisiensi perencanaan kunjungan sales melalui analisis jadwal, segmentasi pelanggan, dan pengurangan total jarak perjalanan.",
 
         process: [
           "Clean and prepare business datasets.",
@@ -133,18 +134,19 @@ const Projects = () => {
         findings: [
           "Customer segmentation was used to prioritize sales visits.",
           "Historical visit patterns can support sales scheduling decisions.",
-          "Google OR-Tools TSP route simulations reduced travel distance by up to 25% against the project comparison routes; not a measured field deployment.",
-          "This was a Bitlabs Academy team case study; results represent analytical recommendations and modeled efficiency, not deployed company-wide outcomes.",
+          "Dalam simulasi TSP menggunakan Google OR-Tools, total jarak rute hasil optimasi berkurang hingga 25% dibanding total jarak aktual yang ditempuh sales pada data pembanding. Ini bukan penghematan biaya yang sudah diverifikasi di lapangan.",
+          "Rekomendasi utama mencakup penjadwalan kunjungan sales, prioritas pelanggan berdasarkan segmentasi, dan urutan kunjungan yang lebih efisien. Kontribusi pribadi saya adalah preprocessing, SQL, dan optimasi rute.",
         ],
       },
     },
 
 
     {
+      contribution: "Pembersihan data, analisis statistik, ekstraksi insight dengan SQLite.",
       title: "Sleep Health & Lifestyle Analytics",
-      category: "Data Analytics / SQL",
-      description: "Analyzed 374 sleep and lifestyle records to uncover relationships between stress, sleep quality, sleep duration, and occupation.",
-      technologies: ["Python", "Pandas", "SQL", "SQLite", "Tableau", "Statistics"],
+      category: "Analisis Data / SQL",
+      description: "Menganalisis 374 observasi untuk mengidentifikasi hubungan antara stres, durasi tidur, kualitas tidur, dan pekerjaan.",
+      technologies: ["Python", "Pandas", "SQL", "SQLite", "Statistik"],
       icon: "🌙",
       featured: false,
       githubPath: "myusrilap/Sleep-Health-Lifestyle-Analytics",
@@ -172,10 +174,11 @@ const Projects = () => {
       }
     },
     {
+      contribution: "Pembersihan data, analisis SQL, perbandingan kelompok jabatan, dan pengujian statistik.",
       title: "GenderBridge — Workforce Equality Analytics",
-      category: "Data Analytics / HR Analytics",
-      description: "Examined gender representation, comparable-role salary differences, promotions, and leadership training in a 5,000-record workforce case study.",
-      technologies: ["Python", "Pandas", "SQL", "SQLite", "Tableau", "Statistical Analysis"],
+      category: "Analisis Data / SDM",
+      description: "Analisis 5.000 data karyawan simulasi untuk membandingkan representasi gender, gaji setara jabatan, promosi, dan pelatihan kepemimpinan.",
+      technologies: ["Python", "Pandas", "SQL", "SQLite", "Statistik"],
       icon: "⚖️",
       featured: false,
       githubPath: "myusrilap/GenderBridge-Workforce-Equality-Analytics",
@@ -204,10 +207,11 @@ const Projects = () => {
     },
 
     {
+      contribution: "Pengembangan antarmuka dan fitur interaktif prototipe website.",
       title: "ECO Samarinda",
-      category: "Web Development",
+      category: "Pengembangan Web",
       description:
-        "Prototype environmental website designed to provide information and education about cleanliness, waste management, and environmental awareness in Samarinda.",
+        "Prototipe website edukasi lingkungan Samarinda dengan halaman informasi, galeri, berita, dan fitur interaktif.",
       technologies: [
         "HTML",
         "CSS",
@@ -260,16 +264,17 @@ const Projects = () => {
 
         findings: [
           "Implemented a multi-page responsive informational prototype with navigation, news, galleries, environmental resources, and UI interactions.",
-          "Complaint and registration interfaces are prototypes; this project is not an official public service.",
+          "Fitur antarmuka dapat diinteraksikan, tetapi website secara keseluruhan tetap merupakan prototipe pembelajaran, bukan layanan pemerintah atau organisasi resmi.",
         ],
       },
     },
 
       {
+        contribution: "Seluruh implementasi frontend; backend dan sistem keseluruhan merupakan pekerjaan tim.",
         title: "Website SIPARUNG",
         category: "Web Development",
         description:
-          "A room reservation website developed for the internal needs of BKPSDM Samarinda, allowing employees to view and request room reservations through a web-based interface.",
+          "Antarmuka sistem peminjaman ruang internal BKPSDM Samarinda; saya mengerjakan seluruh bagian frontend dalam proyek kolaboratif.",
         technologies: [
           "PHP",
           "JavaScript",
@@ -320,17 +325,18 @@ const Projects = () => {
       
           findings: [
             "Delivered frontend interface components for an internal room-booking workflow, including dashboard and booking-related views.",
-            "My contribution was frontend UI implementation with Bootstrap/AdminLTE; backend and the broader booking system were collaborative team work.",
+            "Saya mengimplementasikan seluruh halaman frontend dengan Bootstrap/AdminLTE, sedangkan backend dan integrasi sistem merupakan cakupan tim.",
             "This work was completed during an internship at BKPSDM Samarinda; no measured adoption or booking-time reduction is claimed.",
           ],
         },
       },
 
       {
+        contribution: "Implementasi frontend pada proyek KKN; website merupakan hasil pengembangan, belum diklaim digunakan pihak kelurahan.",
         title: "Visit Lamaru",
-        category: "Web Development / KKN",
+        category: "Pengembangan Web / KKN",
         description:
-          "A functional web application developed during KKN to present information about Kelurahan Lamaru, with the main contribution focused on frontend development and user interface implementation.",
+          "Website informasi wisata Lamaru hasil pengembangan KKN; kontribusi saya berfokus pada frontend dan pengalaman pengguna.",
         technologies: [
           "HTML",
           "CSS",
@@ -382,15 +388,16 @@ const Projects = () => {
           findings: [
             "Implemented frontend pages for a KKN tourism-information site covering attractions, facilities, events, and gallery content.",
             "The site provides a navigable, responsive information interface; the work was developed collaboratively with the KKN team.",
-            "My contribution focused on frontend development; no traffic or tourism-growth impact has been independently established.",
+            "Hasil proyek merupakan website informasi wisata yang dikembangkan bersama tim KKN; belum terdapat data pemakaian resmi atau bukti dampak terhadap kunjungan wisata.",
           ],
         },
       },
     {
+      contribution: "Analisis eksploratif, pemodelan K-Means, dan implementasi visualisasi Streamlit.",
       title: "Customer Segmentation",
       category: "Data Analytics",
       description:
-        "Applied K-Means clustering to group customers by similar characteristics, with preprocessing, cluster exploration, and visual interpretation.",
+        "Segmentasi pelanggan dengan K-Means menjadi empat klaster berdasarkan karakteristik belanja dan kategori produk, ditampilkan melalui Streamlit.",
       technologies: [
         "Python",
         "Pandas",
@@ -417,7 +424,7 @@ const Projects = () => {
           "Clean and prepare the dataset.",
           "Perform exploratory analysis.",
           "Prepare relevant features for segmentation.",
-          "Apply K-Means clustering and interpret the characteristics of four resulting groups.",
+          "Menormalisasi fitur dengan MinMaxScaler lalu menerapkan K-Means dengan k=4. Jumlah klaster dipilih menggunakan pendekatan Elbow Method, tetapi grafik/implementasi Elbow belum tercantum di repository.",
           "Analyze and interpret the resulting customer groups.",
           "Prepare visual outputs to communicate the segmentation results.",
         ],
@@ -443,7 +450,7 @@ const Projects = () => {
 
         findings: [
           "K-Means grouped customers into four clusters for comparing their characteristics and supporting more targeted analysis.",
-          "The repository does not yet present validated business outcomes or a quantified improvement from applying these segments.",
+          "Profil klaster pada aplikasi Streamlit: klaster 0 pembeli hemat produk kecantikan/pakaian; klaster 1 cenderung produk elektronik mahal; klaster 2 pembeli dengan minat lintas kategori; klaster 3 preferensi elektronik dan kecantikan. Deskripsi ini merupakan interpretasi yang tertulis di aplikasi, bukan dampak bisnis yang telah diukur.",
         ],
       },
     },
@@ -468,7 +475,7 @@ const Projects = () => {
           </p>
         </div>
         <span className="self-start text-xs font-medium text-blue-300 bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1.5">
-          {items.length} Projects
+          {items.length} Proyek
         </span>
       </div>
       <div className="grid md:grid-cols-2 gap-5">
@@ -494,27 +501,27 @@ const Projects = () => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-blue-400 font-medium mb-3">Projects</p>
+            <p className="text-blue-400 font-medium mb-3">Portofolio Proyek</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-              Selected<span className="text-blue-400"> work.</span>
+              Pilihan<span className="text-blue-400"> proyek.</span>
             </h2>
             <p className="mt-5 text-gray-400 max-w-2xl text-lg leading-relaxed">
-              A collection of projects in data analytics, machine learning,
-              research, and web development.
+              Kumpulan proyek analisis data, machine learning, business intelligence,
+              serta pengembangan web dengan kontribusi dan hasil yang terukur.
             </p>
           </motion.div>
 
           {renderProjectGroup(
             dataProjects,
-            "Data Analytics & Machine Learning",
-            "Business analytics, data-driven insights, clustering, and deep learning research.",
+            "Analisis Data, BI & Machine Learning",
+            "Analisis bisnis, SQL, segmentasi pelanggan, statistik, dan penelitian machine learning.",
             "data-projects"
           )}
 
           {renderProjectGroup(
             webProjects,
             "Web Development",
-            "Frontend development and responsive websites for organizations and communities.",
+            "Implementasi antarmuka dan website responsif untuk kebutuhan organisasi serta masyarakat.",
             "web-projects"
           )}
         </div>
