@@ -31,10 +31,10 @@ const Projects = () => {
 
       details: {
         overview:
-          "An undergraduate thesis project investigating brain tumor classification from MRI images using VGG16. The study compares a baseline VGG16 classifier with a pipeline that applies U-Net-based ROI segmentation before classification.",
+          "Penelitian skripsi yang membandingkan model klasifikasi citra MRI VGG16 tanpa segmentasi dan model dengan segmentasi ROI U-Net sebelum klasifikasi.",
 
         problem:
-          "The research evaluates whether isolating the tumor region from MRI images can improve classification performance across Glioma, Meningioma, Pituitary, and No Tumor classes.",
+          "Menguji apakah pemisahan area tumor dengan U-Net meningkatkan akurasi klasifikasi empat kelas MRI: glioma, meningioma, pituitari, dan tanpa tumor.",
 
         process: [
           "Preprocessed MRI images with resizing to 224×224, CLAHE enhancement, normalization, and training augmentation.",
@@ -96,7 +96,7 @@ const Projects = () => {
 
       details: {
         overview:
-          "Academic Project Based Learning project focused on business data analysis using the Dagangan case study. The project combines customer segmentation, sales visit analysis, route optimization, SQL analysis, and Tableau visualization.",
+          "Proyek tim Bitlabs Academy berbasis studi kasus Dagangan yang menggabungkan preprocessing, analisis SQL, segmentasi pelanggan RFM, kunjungan sales, optimasi rute, dan visualisasi.",
 
         problem:
           "Meningkatkan efisiensi perencanaan kunjungan sales melalui analisis jadwal, segmentasi pelanggan, dan pengurangan total jarak perjalanan.",
@@ -151,8 +151,8 @@ const Projects = () => {
       featured: false,
       githubPath: "myusrilap/Sleep-Health-Lifestyle-Analytics",
       details: {
-        overview: "End-to-end analysis of the Sleep Health and Lifestyle dataset, from Python preprocessing to SQL-based insights and visualization-ready data.",
-        problem: "Explore how stress levels, sleeping duration, occupation, and lifestyle characteristics relate to sleep quality in a dataset of 374 observations.",
+        overview: "Analisis 374 observasi gaya hidup dan tidur menggunakan Python untuk pembersihan data, SQLite untuk agregasi, serta korelasi untuk mengidentifikasi pola kualitas tidur.",
+        problem: "Mengukur hubungan stres, durasi tidur, aktivitas fisik, dan pekerjaan dengan kualitas tidur untuk menemukan faktor pembeda utama pada 374 observasi.",
         process: [
           "Validated and cleaned 374 observations with Python, including categorical normalization.",
           "Prepared indicators for occupation, sleep disorder, stress levels, and sleep duration.",
@@ -167,8 +167,8 @@ const Projects = () => {
           { label: "High vs Low Stress", value: "3.05-point difference in average sleep quality" }
         ],
         findings: [
-          "The high-stress group recorded a 5.92 average sleep-quality score, compared with 8.97 in the low-stress group.",
-          "Sleep duration was positively associated with sleep quality (Spearman +0.887).",
+          "Kelompok stres tinggi memiliki rata-rata kualitas tidur 5,92 dibanding 8,97 pada kelompok stres rendah, selisih 3,05 poin.",
+          "Durasi tidur berkorelasi positif kuat dengan kualitas tidur (Spearman +0,887), sedangkan stres berkorelasi negatif kuat (−0,908).",
           "Among 374 observations, sleep duration and quality were strongly associated (Spearman +0.887); these observational findings do not establish causality."
         ]
       }
@@ -183,8 +183,8 @@ const Projects = () => {
       featured: false,
       githubPath: "myusrilap/GenderBridge-Workforce-Equality-Analytics",
       details: {
-        overview: "A fictional workforce equality case study evaluating compensation, representation, and career opportunities across companies, departments, and job levels.",
-        problem: "Identify where differences in representation, salary, promotion, and leadership training appear across gender groups and job categories.",
+        overview: "Studi kasus SDM fiktif dengan 5.000 catatan untuk membandingkan representasi gender, gaji, promosi, pelatihan, dan kesempatan pengembangan karier.",
+        problem: "Mengidentifikasi pola perbedaan gender dengan memperhitungkan variasi perusahaan, departemen, dan jenjang jabatan agar kesimpulan tidak bergantung pada rata-rata agregat.",
         process: [
           "Prepared 5,000 workforce records using Python, standardizing gender and job-level labels.",
           "Validated salary fields before computing pay indicators.",
@@ -199,9 +199,9 @@ const Projects = () => {
           { label: "Promotion Rate", value: "20.38% female vs 20.99% male" }
         ],
         findings: [
-          "Women had a 28.44% leadership-training participation rate versus 30.40% for men, a descriptive gap of 1.96 percentage points; promotion differed by 0.61 points.",
-          "Differences varied across departments and job levels rather than following a uniform pattern.",
-          "Overall gender gaps in promotion (chi-square p≈0.631) and training (p≈0.144) were not significant at α=0.05. This is a fictional case study, not an audit of real employers."
+          "Partisipasi pelatihan perempuan 28,44% dan laki-laki 30,40% (selisih 1,96 poin persentase), lebih besar daripada selisih promosi 0,61 poin.",
+          "Arah selisih berubah menurut departemen dan level jabatan; angka agregat tidak mewakili seluruh kelompok.",
+          "Uji chi-square promosi (p≈0,631) dan pelatihan (p≈0,144) tidak signifikan pada taraf 5%. Analisis ini merupakan studi kasus fiktif, bukan audit perusahaan nyata."
         ]
       }
     },
@@ -229,10 +229,10 @@ const Projects = () => {
 
       details: {
         overview:
-          "ECO Samarinda is a fictional environmental website prototype developed as a web programming project.",
+          "Prototipe website edukasi lingkungan Samarinda yang dibuat untuk mengimplementasikan antarmuka responsif, navigasi, informasi, serta interaksi pada berbagai halaman.",
 
         problem:
-          "The project focuses on presenting environmental information in an accessible website while practicing interface design, navigation, responsive development, and frontend implementation.",
+          "Menyajikan informasi lingkungan, berita, galeri, dan kanal pengaduan dalam antarmuka web yang mudah dinavigasi; fitur tetap merupakan prototipe pembelajaran.",
 
         process: [
           "Design the website structure and navigation.",
@@ -291,10 +291,10 @@ const Projects = () => {
       
         details: {
           overview:
-            "SIPARUNG is a web-based room reservation system developed to support the internal operational needs of BKPSDM Samarinda. The system is intended to make the process of borrowing and reserving rooms for employees more organized and accessible.",
+            "SIPARUNG merupakan sistem peminjaman ruang internal BKPSDM Samarinda. Saya menangani seluruh antarmuka frontend dalam proyek kolaboratif.",
       
           problem:
-            "The project addresses the need for a more structured way for employees to request and manage room reservations, reducing reliance on manual coordination for internal room usage.",
+            "Kebutuhan sistem adalah memudahkan pegawai melihat, mengajukan, dan mengelola permohonan peminjaman ruang melalui alur antarmuka yang tertata.",
       
           process: [
             "Analyze the interface and user flow requirements for the room reservation process.",
@@ -326,7 +326,7 @@ const Projects = () => {
           findings: [
             "Delivered frontend interface components for an internal room-booking workflow, including dashboard and booking-related views.",
             "Saya mengimplementasikan seluruh halaman frontend dengan Bootstrap/AdminLTE, sedangkan backend dan integrasi sistem merupakan cakupan tim.",
-            "This work was completed during an internship at BKPSDM Samarinda; no measured adoption or booking-time reduction is claimed.",
+            "Implementasi berlangsung saat PKL di BKPSDM Samarinda. Tidak ada klaim peningkatan produktivitas atau pengurangan durasi peminjaman yang belum diukur.",
           ],
         },
       },
@@ -352,10 +352,10 @@ const Projects = () => {
       
         details: {
           overview:
-            "Visit Lamaru is a functional web application developed as part of a KKN project to provide accessible information about Kelurahan Lamaru. The website presents local information through an organized and user-friendly interface.",
+            "Website Visit Lamaru adalah hasil pengembangan program KKN untuk menyajikan informasi wisata, acara, fasilitas, dan galeri Kelurahan Lamaru. Kontribusi saya berfokus pada frontend.",
       
           problem:
-            "The project aimed to provide a centralized web platform for presenting information about Kelurahan Lamaru, including local events, facilities, gallery content, and other community-related information.",
+            "Menyatukan informasi wisata dan kegiatan lokal pada satu website yang mudah diakses dan responsif. Website merupakan produk pengembangan KKN, tanpa klaim penggunaan resmi oleh kelurahan.",
       
           process: [
             "Analyze the information and content that needed to be presented on the website.",
@@ -414,10 +414,10 @@ const Projects = () => {
 
       details: {
         overview:
-          "A clustering project applying K-Means and exploratory analysis to identify four distinct groups of customers with similar attributes.",
+          "Segmentasi pelanggan dengan K-Means, normalisasi MinMaxScaler, visualisasi PCA, serta aplikasi Streamlit untuk menelusuri distribusi dan karakteristik empat klaster.",
 
         problem:
-          "Customer data can contain different behavioral patterns. Segmentation can help organize customers into groups that are easier to analyze and interpret.",
+          "Mengelompokkan pola belanja pelanggan berdasarkan kelompok usia, gender, kategori pengeluaran, tingkat harga, dan kategori produk agar strategi pemasaran dapat lebih terarah.",
 
         process: [
           "Load and inspect customer data.",
@@ -449,7 +449,7 @@ const Projects = () => {
         ],
 
         findings: [
-          "K-Means grouped customers into four clusters for comparing their characteristics and supporting more targeted analysis.",
+          "K-Means menghasilkan empat klaster yang dapat digunakan untuk membandingkan kecenderungan pengeluaran dan preferensi kategori produk.",
           "Profil klaster pada aplikasi Streamlit: klaster 0 pembeli hemat produk kecantikan/pakaian; klaster 1 cenderung produk elektronik mahal; klaster 2 pembeli dengan minat lintas kategori; klaster 3 preferensi elektronik dan kecantikan. Deskripsi ini merupakan interpretasi yang tertulis di aplikasi, bukan dampak bisnis yang telah diukur.",
         ],
       },
