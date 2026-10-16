@@ -5,13 +5,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Contact", href: "#contact" },
+    { name: "Beranda", href: "#home" },
+    { name: "Tentang", href: "#about" },
+    { name: "Keahlian", href: "#skills" },
+    { name: "Proyek", href: "#projects" },
+    { name: "Pengalaman", href: "#experience" },
+    { name: "Sertifikasi", href: "#certifications" },
+    { name: "Kontak", href: "#contact" },
   ];
 
   const handleNavClick = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 bg-white/5 text-gray-300 hover:text-white transition"
-            aria-label="Toggle navigation"
+            aria-label="Buka atau tutup navigasi"
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
