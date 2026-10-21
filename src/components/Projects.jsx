@@ -149,7 +149,8 @@ const Projects = () => {
         "Analisis 8.000 data telemetri konsumsi kafein untuk melihat pengaruh profil metabolisme CYP1A2, sumber kafein, dan durasi tidur terhadap energy crash serta skor kecemasan akut.",
       technologies: ["Python", "Pandas", "Seaborn", "Matplotlib", "SQL", "SQLite", "DBeaver", "Tableau"],
       icon: "☕",
-      featured: false,
+      image: `${BASE_URL}projects/tableau_dashboard_preview.png`,
+      featured: true,
       githubPath: "myusrilap/Analisis-Data-Dampak-Konsumsi-Kafein",
       details: {
         overview:
@@ -185,7 +186,8 @@ const Projects = () => {
         "Analisis pembatalan, lead time, dan Average Daily Rate (ADR) pada City Hotel dan Resort Hotel dengan Python, SQL, uji A/B, dan Tableau.",
       technologies: ["Python", "Pandas", "SciPy", "Seaborn", "Matplotlib", "SQL"],
       icon: "🏨",
-      featured: false,
+      image: `${BASE_URL}projects/reservasi_hotel.png`,
+      featured: true,
       githubPath: "myusrilap/Analisis-Data-Reservasi-Hotel",
       details: {
         overview:
