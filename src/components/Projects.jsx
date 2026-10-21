@@ -8,71 +8,7 @@ const Projects = () => {
   const BASE_URL = import.meta.env.BASE_URL;
 
   const projects = [
-    {
-      contribution: "Penelitian dan implementasi model klasifikasi serta segmentasi MRI secara mandiri.",
-      title: "Brain Tumor Classification",
-      category: "Machine Learning / Skripsi",
-      description:
-        "Membandingkan klasifikasi tumor otak pada citra MRI menggunakan VGG16 dengan dan tanpa segmentasi ROI U-Net; akurasi pengujian 98% berbanding 87%.",
-      technologies: [
-        "Python",
-        "TensorFlow",
-        "VGG16",
-        "U-Net",
-        "OpenCV",
-        "Scikit-learn",
-      ],
-      icon: "🧠",
-      image: `${BASE_URL}projects/brain-tumor.png`,
-      featured: true,
-
-      githubPath:
-        "myusrilap/Brain-Tumor-Classification-using-VGG16-with-and-without-U-Net-ROI-Segmentation",
-
-      details: {
-        overview:
-          "Penelitian skripsi yang membandingkan model klasifikasi citra MRI VGG16 tanpa segmentasi dan model dengan segmentasi ROI U-Net sebelum klasifikasi.",
-
-        problem:
-          "Menguji apakah pemisahan area tumor dengan U-Net meningkatkan akurasi klasifikasi empat kelas MRI: glioma, meningioma, pituitari, dan tanpa tumor.",
-
-        process: [
-          "Melakukan preprocessing MRI: resize 224×224, CLAHE, normalisasi, dan augmentasi data latih.",
-          "Membagi 7.200 citra MRI menjadi data latih, validasi, dan uji (70:15:15) secara stratified; 1.080 citra digunakan untuk pengujian.",
-          "Melatih model klasifikasi dasar menggunakan VGG16.",
-          "Melatih segmentasi U-Net ber-encoder VGG16 pada dataset terpisah dengan IoU 0,8224.",
-          "Membandingkan klasifikasi citra asli dengan klasifikasi setelah masking ROI.",
-          "Mengevaluasi akurasi, presisi, recall, F1-score, dan confusion matrix.",
-        ],
-
-        results: [
-          {
-            label: "Model Dasar",
-            value: "98% akurasi uji tanpa ROI",
-          },
-          {
-            label: "Model Eksperimen",
-            value: "87% akurasi uji dengan ROI",
-          },
-          {
-            label: "Kelas Klasifikasi",
-            value: "Glioma, Meningioma, Pituitary, No Tumor",
-          },
-          {
-            label: "Temuan Utama",
-            value:
-              "11-percentage-point higher test accuracy without ROI",
-          },
-        ],
-
-        findings: [
-          "VGG16 without ROI segmentation achieved better classification performance than the segmentation-based pipeline.",
-          "Penggunaan ROI U-Net menghasilkan akurasi 87%, lebih rendah daripada baseline VGG16 sebesar 98%.",
-          "Perbedaan karakteristik citra MRI pada dataset segmentasi dan klasifikasi menjadi dugaan utama penurunan performa U-Net; penghilangan konteks akibat masking ROI juga merupakan kemungkinan, bukan faktor yang telah dibuktikan secara terpisah.",
-        ],
-      },
-    },
-
+ 
     {
       title: "Business Analisis Data — Dagangan",
       category: "Analisis Data / Proyek Tim",
@@ -89,7 +25,7 @@ const Projects = () => {
       ],
       icon: "📊",
       image: `${BASE_URL}projects/dagangan.png`,
-      featured: false,
+      featured: true,
 
       githubPath:
         "myusrilap/Business-Data-Analytics_Dagangan",
@@ -215,6 +151,71 @@ const Projects = () => {
         ],
       },
     },
+       {
+      contribution: "Penelitian dan implementasi model klasifikasi serta segmentasi MRI secara mandiri.",
+      title: "Brain Tumor Classification",
+      category: "Machine Learning / Skripsi",
+      description:
+        "Membandingkan klasifikasi tumor otak pada citra MRI menggunakan VGG16 dengan dan tanpa segmentasi ROI U-Net; akurasi pengujian 98% berbanding 87%.",
+      technologies: [
+        "Python",
+        "TensorFlow",
+        "VGG16",
+        "U-Net",
+        "OpenCV",
+        "Scikit-learn",
+      ],
+      icon: "🧠",
+      image: `${BASE_URL}projects/brain-tumor.png`,
+      featured: false,
+
+      githubPath:
+        "myusrilap/Brain-Tumor-Classification-using-VGG16-with-and-without-U-Net-ROI-Segmentation",
+
+      details: {
+        overview:
+          "Penelitian skripsi yang membandingkan model klasifikasi citra MRI VGG16 tanpa segmentasi dan model dengan segmentasi ROI U-Net sebelum klasifikasi.",
+
+        problem:
+          "Menguji apakah pemisahan area tumor dengan U-Net meningkatkan akurasi klasifikasi empat kelas MRI: glioma, meningioma, pituitari, dan tanpa tumor.",
+
+        process: [
+          "Melakukan preprocessing MRI: resize 224×224, CLAHE, normalisasi, dan augmentasi data latih.",
+          "Membagi 7.200 citra MRI menjadi data latih, validasi, dan uji (70:15:15) secara stratified; 1.080 citra digunakan untuk pengujian.",
+          "Melatih model klasifikasi dasar menggunakan VGG16.",
+          "Melatih segmentasi U-Net ber-encoder VGG16 pada dataset terpisah dengan IoU 0,8224.",
+          "Membandingkan klasifikasi citra asli dengan klasifikasi setelah masking ROI.",
+          "Mengevaluasi akurasi, presisi, recall, F1-score, dan confusion matrix.",
+        ],
+
+        results: [
+          {
+            label: "Model Dasar",
+            value: "98% akurasi uji tanpa ROI",
+          },
+          {
+            label: "Model Eksperimen",
+            value: "87% akurasi uji dengan ROI",
+          },
+          {
+            label: "Kelas Klasifikasi",
+            value: "Glioma, Meningioma, Pituitary, No Tumor",
+          },
+          {
+            label: "Temuan Utama",
+            value:
+              "11-percentage-point higher test accuracy without ROI",
+          },
+        ],
+
+        findings: [
+          "VGG16 without ROI segmentation achieved better classification performance than the segmentation-based pipeline.",
+          "Penggunaan ROI U-Net menghasilkan akurasi 87%, lebih rendah daripada baseline VGG16 sebesar 98%.",
+          "Perbedaan karakteristik citra MRI pada dataset segmentasi dan klasifikasi menjadi dugaan utama penurunan performa U-Net; penghilangan konteks akibat masking ROI juga merupakan kemungkinan, bukan faktor yang telah dibuktikan secara terpisah.",
+        ],
+      },
+    },
+
 
     {
       contribution: "Pengembangan antarmuka dan fitur interaktif prototipe website.",
