@@ -143,67 +143,75 @@ const Projects = () => {
 
     {
       contribution: "Pembersihan data, analisis statistik, ekstraksi insight dengan SQLite.",
-      title: "Sleep Health & Lifestyle Analytics",
-      category: "Analisis Data / SQL",
-      description: "Menganalisis 374 observasi untuk mengidentifikasi hubungan antara stres, durasi tidur, kualitas tidur, dan pekerjaan.",
-      technologies: ["Python", "Pandas", "SQL", "SQLite", "Statistik"],
-      icon: "🌙",
+      title: "Analisis Telemetri Kafein, Risiko Crash & Kecemasan",
+      category: "Analisis Data / SQL, Python & Tableau",
+      description:
+        "Analisis 8.000 data telemetri konsumsi kafein untuk melihat pengaruh profil metabolisme CYP1A2, sumber kafein, dan durasi tidur terhadap energy crash serta skor kecemasan akut.",
+      technologies: ["Python", "Pandas", "Seaborn", "Matplotlib", "SQL", "SQLite", "DBeaver", "Tableau"],
+      icon: "☕",
       featured: false,
-      githubPath: "myusrilap/Sleep-Health-Lifestyle-Analytics",
+      githubPath: "myusrilap/caffeine-telemetry-portfolio",
       details: {
-        overview: "Analisis 374 observasi gaya hidup dan tidur menggunakan Python untuk pembersihan data, SQLite untuk agregasi, serta korelasi untuk mengidentifikasi pola kualitas tidur.",
-        problem: "Mengukur hubungan stres, durasi tidur, aktivitas fisik, dan pekerjaan dengan kualitas tidur untuk menemukan faktor pembeda utama pada 374 observasi.",
+        overview:
+          "Proyek analisis data end-to-end atas 8.000 data telemetri konsumen: inspeksi dan EDA di Python (Google Colab), query agregasi di SQL (DBeaver/SQLite), dan dashboard eksekutif satu halaman di Tableau.",
+        problem:
+          "Mengidentifikasi faktor yang paling terkait dengan severe crash dan tachycardia (dosis, sumber kafein, durasi tidur), membandingkan profil metabolisme CYP1A2, serta mengukur hubungan rasa gelisah (jitters) dengan kecemasan akut.",
         process: [
-          "Memvalidasi dan membersihkan 374 observasi menggunakan Python.",
-          "Menyiapkan pengelompokan pekerjaan, kategori gangguan tidur, stres, dan durasi tidur.",
-          "Memakai agregasi, CTE, dan window function SQL untuk membandingkan pola tidur antarkelompok.",
-          "Mengukur korelasi Spearman dan menjelaskan selisih rata-rata antarkelompok.",
-          "Menyusun tabel hasil analisis sebagai sumber visualisasi."
+          "Memverifikasi kualitas data: 0 missing value, 0 duplikat, dan rentang nilai ekstrem yang masuk akal secara logis.",
+          "Melakukan EDA: distribusi, box plot, scatter plot (dosis vs. detak jantung), dan matriks korelasi dengan Seaborn dan Matplotlib.",
+          "Memuat dataset bersih ke basis data relasional dan menulis query agregasi (GROUP BY, AVG, COUNT) berdasarkan sumber kafein, tipe metabolizer, dan tingkat risiko.",
+          "Membandingkan waktu onset crash dan skor kecemasan antara slow dan fast metabolizer.",
+          "Merancang dashboard Tableau satu halaman berisi kartu KPI, peringkat risiko sumber kafein, dan distribusi dampak fisiologis.",
         ],
         results: [
-          { label: "Observasi", value: "374" },
-          { label: "Rata-rata Durasi Tidur", value: "7.13 hours" },
-          { label: "Stres vs Kualitas Tidur", value: "Spearman −0.908" },
-          { label: "Stres Tinggi vs Rendah", value: "3.05-point difference in average sleep quality" }
+          { label: "Data Telemetri", value: "8.000 observasi" },
+          { label: "Waktu Crash (Slow vs Fast Metabolizer)", value: "3,92 jam vs 7,16 jam" },
+          { label: "Sumber Paling Berisiko", value: "Pre-Workout Supplement (keparahan crash ~8,31)" },
+          { label: "Jitters vs Kecemasan Akut", value: "Korelasi r = 0,87" },
         ],
         findings: [
-          "Kelompok stres tinggi memiliki rata-rata kualitas tidur 5,92 dibanding 8,97 pada kelompok stres rendah, selisih 3,05 poin.",
-          "Durasi tidur berkorelasi positif kuat dengan kualitas tidur (Spearman +0,887), sedangkan stres berkorelasi negatif kuat (−0,908).",
-          "Among 374 observations, sleep duration and quality were strongly associated (Spearman +0.887); these observational findings do not establish causality."
-        ]
-      }
+          "Slow metabolizer mengalami crash rata-rata dalam 3,92 jam dengan skor kecemasan akut 5,42, sedangkan fast metabolizer 7,16 jam dengan skor 2,55.",
+          "Pre-Workout Supplement memiliki rata-rata dosis tertinggi (~336 mg), lonjakan detak jantung terbesar (~9,31 BPM), dan keparahan crash tertinggi (~8,31); Brewed Drip Coffee dan Matcha/Green Tea berada di bawah 4,6.",
+          "Pengguna kategori Severe Crash & Tachycardia rata-rata tidur 5,66 jam malam sebelumnya, sedangkan kategori Sustained/Negligible Crash di atas 7,3 jam.",
+          "Intensitas jitters dan skor kecemasan akut berkorelasi linier kuat (r = 0,87). Temuan ini bersifat observasional dan tidak membuktikan hubungan sebab-akibat.",
+        ],
+      },
     },
     {
-      contribution: "Pembersihan data, analisis SQL, perbandingan kelompok jabatan, dan pengujian statistik.",
-      title: "GenderBridge — Workforce Equality Analytics",
-      category: "Analisis Data / SDM",
-      description: "Analisis 5.000 data karyawan simulasi untuk membandingkan representasi gender, gaji setara jabatan, promosi, dan pelatihan kepemimpinan.",
-      technologies: ["Python", "Pandas", "SQL", "SQLite", "Statistik"],
-      icon: "⚖️",
+    contribution: "Pembersihan data, analisis SQL (CTE, agregasi), uji A/B statistik, dan visualisasi Tableau.",
+      title: "Analisis Data Reservasi Hotel",
+      category: "Analisis Data / SQL & Statistik",
+      description:
+        "Analisis pembatalan, lead time, dan Average Daily Rate (ADR) pada City Hotel dan Resort Hotel dengan Python, SQL, uji A/B, dan Tableau.",
+      technologies: ["Python", "Pandas", "SciPy", "Seaborn", "Matplotlib", "SQL", "Tableau"],
+      icon: "🏨",
       featured: false,
-      githubPath: "myusrilap/GenderBridge-Workforce-Equality-Analytics",
+      githubPath: "myusrilap/Hotel-Reservation-Analytics",
       details: {
-        overview: "Studi kasus SDM fiktif dengan 5.000 catatan untuk membandingkan representasi gender, gaji, promosi, pelatihan, dan kesempatan pengembangan karier.",
-        problem: "Mengidentifikasi pola perbedaan gender dengan memperhitungkan variasi perusahaan, departemen, dan jenjang jabatan agar kesimpulan tidak bergantung pada rata-rata agregat.",
+        overview:
+          "Proyek end-to-end atas dataset publik Hotel Booking Demand untuk mengevaluasi kinerja City Hotel dan Resort Hotel dari sisi pembatalan, lead time, dan ADR. Raw data tidak disertakan di repositori karena batasan ukuran file; dataset hasil pembersihan tersedia dan dapat direproduksi dengan script yang ada.",
+        problem:
+          "Menjawab tantangan operasional perhotelan: tingginya tingkat pembatalan, variasi lead time, dan optimasi ADR, agar rekomendasi dapat menopang stabilitas pendapatan dan efisiensi manajemen reservasi.",
         process: [
-          "Membersihkan 5.000 data karyawan simulasi dan menstandarkan label gender serta jabatan.",
-          "Memvalidasi nilai gaji sebelum menghitung indikator kompensasi.",
-          "Membandingkan promosi, pelatihan, departemen, dan jenjang jabatan melalui SQL.",
-          "Membandingkan gaji dalam kelompok perusahaan–departemen–level jabatan yang sebanding.",
-          "Menggunakan uji chi-square untuk memeriksa signifikansi selisih promosi dan pelatihan."
+          "Membersihkan data, melakukan imputasi, serta mendeteksi dan menangani outlier dengan metode IQR.",
+          "Melakukan EDA pada pola pembatalan, lead time, tren musiman, dan pemesanan last-minute.",
+          "Menyusun query SQL (CTE dan agregasi) untuk mengekstrak metrik per jenis hotel.",
+          "Menguji perbedaan ADR antar hotel dengan uji A/B (T-test, KS test, Levene test).",
+          "Memodelkan proses bisnis dengan BPMN dan menyajikan hasil dalam dashboard Tableau.",
         ],
         results: [
-          { label: "Data Karyawan", value: "5,000" },
-          { label: "Representasi Perempuan", value: "40.72%" },
-          { label: "Pelatihan Kepemimpinan", value: "28.44% female vs 30.40% male" },
-          { label: "Tingkat Promosi", value: "20.38% female vs 20.99% male" }
+          { label: "Pembatalan Lead Time 91+ Hari", value: "Hingga ~51%" },
+          { label: "Uji A/B ADR", value: "T-statistic 25,57; p < 0,05" },
+          { label: "Puncak Pendapatan Resort Hotel", value: "Agustus" },
+          { label: "Last-Minute (≤ 3 hari)", value: "City ~5.000 vs Resort ~4.500" },
         ],
         findings: [
-          "Partisipasi pelatihan perempuan 28,44% dan laki-laki 30,40% (selisih 1,96 poin persentase), lebih besar daripada selisih promosi 0,61 poin.",
-          "Arah selisih berubah menurut departemen dan level jabatan; angka agregat tidak mewakili seluruh kelompok.",
-          "Uji chi-square promosi (p≈0,631) dan pelatihan (p≈0,144) tidak signifikan pada taraf 5%. Analisis ini merupakan studi kasus fiktif, bukan audit perusahaan nyata."
-        ]
-      }
+          "City Hotel memiliki tingkat pembatalan lebih tinggi daripada Resort Hotel; rasio pembatalan naik seiring panjang lead time, dan reservasi 91+ hari memiliki kemungkinan batal tertinggi (~51%).",
+          "Uji A/B menunjukkan perbedaan ADR yang signifikan antar kedua hotel. Pendapatan City Hotel relatif stabil sepanjang tahun, sedangkan Resort Hotel fluktuatif mengikuti musim dengan puncak di Agustus.",
+          "Pemesanan last-minute (≤ 3 hari) lebih banyak terjadi di City Hotel (~5.000) dibanding Resort Hotel (~4.500).",
+          "Rekomendasi: kebijakan deposit atau pembatalan lebih ketat untuk lead time > 90 hari, dynamic pricing musiman untuk Resort Hotel (ramai Juli–Agustus, promo Oktober–Januari), dan upselling saat check-in bagi tamu last-minute. Rekomendasi ini berbasis data historis dan belum diuji dampaknya di lapangan.",
+        ],
+      },
     },
 
     {
