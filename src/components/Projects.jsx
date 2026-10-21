@@ -142,7 +142,7 @@ const Projects = () => {
 
 
     {
-      contribution: "Pembersihan data, analisis statistik, ekstraksi insight dengan SQLite.",
+      contribution: "Pembersihan data, analisis statistik, ekstraksi insight dengan SQLite, Pembuatan Dashboard Menggunakan Tableau.",
       title: "Analisis Telemetri Kafein, Risiko Crash & Kecemasan",
       category: "Analisis Data / SQL, Python & Tableau",
       description:
@@ -150,7 +150,7 @@ const Projects = () => {
       technologies: ["Python", "Pandas", "Seaborn", "Matplotlib", "SQL", "SQLite", "DBeaver", "Tableau"],
       icon: "☕",
       featured: false,
-      githubPath: "myusrilap/caffeine-telemetry-portfolio",
+      githubPath: "myusrilap/Analisis-Data-Dampak-Konsumsi-Kafein",
       details: {
         overview:
           "Proyek analisis data end-to-end atas 8.000 data telemetri konsumen: inspeksi dan EDA di Python (Google Colab), query agregasi di SQL (DBeaver/SQLite), dan dashboard eksekutif satu halaman di Tableau.",
@@ -178,15 +178,15 @@ const Projects = () => {
       },
     },
     {
-    contribution: "Pembersihan data, analisis SQL (CTE, agregasi), uji A/B statistik, dan visualisasi Tableau.",
+    contribution: "Pembersihan data, analisis SQL (CTE, agregasi), uji A/B statistik.",
       title: "Analisis Data Reservasi Hotel",
       category: "Analisis Data / SQL & Statistik",
       description:
         "Analisis pembatalan, lead time, dan Average Daily Rate (ADR) pada City Hotel dan Resort Hotel dengan Python, SQL, uji A/B, dan Tableau.",
-      technologies: ["Python", "Pandas", "SciPy", "Seaborn", "Matplotlib", "SQL", "Tableau"],
+      technologies: ["Python", "Pandas", "SciPy", "Seaborn", "Matplotlib", "SQL"],
       icon: "🏨",
       featured: false,
-      githubPath: "myusrilap/Hotel-Reservation-Analytics",
+      githubPath: "myusrilap/Analisis-Data-Reservasi-Hotel",
       details: {
         overview:
           "Proyek end-to-end atas dataset publik Hotel Booking Demand untuk mengevaluasi kinerja City Hotel dan Resort Hotel dari sisi pembatalan, lead time, dan ADR. Raw data tidak disertakan di repositori karena batasan ukuran file; dataset hasil pembersihan tersedia dan dapat direproduksi dengan script yang ada.",
@@ -197,7 +197,7 @@ const Projects = () => {
           "Melakukan EDA pada pola pembatalan, lead time, tren musiman, dan pemesanan last-minute.",
           "Menyusun query SQL (CTE dan agregasi) untuk mengekstrak metrik per jenis hotel.",
           "Menguji perbedaan ADR antar hotel dengan uji A/B (T-test, KS test, Levene test).",
-          "Memodelkan proses bisnis dengan BPMN dan menyajikan hasil dalam dashboard Tableau.",
+          "Memodelkan proses bisnis dengan BPMN.",
         ],
         results: [
           { label: "Pembatalan Lead Time 91+ Hari", value: "Hingga ~51%" },
